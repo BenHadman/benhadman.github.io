@@ -830,7 +830,9 @@ input[type='month'],
     font-size: 14px;
     font-style: normal;
     background-image: none;
-    border: 1px solid transparent;
+    border: 1px solid;
+    border-color: #83def3;
+   
     transition: border 500ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
 }
 
@@ -6498,7 +6500,7 @@ yx-axis
     margin-bottom: 45px;
 }
 
-#map {
+#map1 {
     width: 100%;
     padding-top: 41%;
     margin-top: 50px;
