@@ -60,7 +60,7 @@
 
                             <ul class="clear-list">
                                 <li><a href="index.html">home</a></li>
-                                <li><a href="portfolio.html">portfolio</a>
+                                <li><a href="#experience">experience</a>
                                 <!--<li class="has-sub-menu"><a href="#">pages</a>
                                     <ul class="sub-menu">
                                         <li><a href="typography.html">typography</a></li>
@@ -243,12 +243,37 @@ $('.demo-prompt').click(function(){
     <div class="row">
         <div class="col-sm-12">
             <h2 class="title-lg text-upper">About Me</h2>
-<div class="typewriter">
+<!--<div class="typewriter">
   <h1>Talk to me about...</h1>
-</div>
+</div>-->
+            <!--TYPING KIT-->
             <div class="text-box">
-                <p><b>Hi,</b><br>
-                    Applying a scientific skillset to the marketing world. I have full marketing mix experience but looking to specialise in digital marketing.<br>Check out this website for more details or <a href="#contact">get in touch...</a></p>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typeit/4.4.0/typeit.min.js"></script>
+            <span class="type-it"></span>
+            <p id="example4"></p> 
+            <script>
+$('#example4').typeIt({
+     speed: 42,
+     autoStart: false,
+     lifeLike: true,
+})
+.tiType('HI')
+.tiPause(500)
+.tiDelete(2)
+.tiType('Hi, ')
+.tiPause(1000)
+.tiType('I\'m Ben,')
+.tiBreak() .tiPause(500)
+.tiType('I made this online CV to demonstrate some web design skills...  ')
+.tiBreak() .tiPause(500)
+.tiType('I\'m looking to specialise in digital marketing and have full marketing mix experience.')
+.tiBreak() .tiPause(500)
+              
+.tiType('Check out this website for more info or get in touch with any opportunities')
+.tiPause(750)
+.tiSettings({speed: 42})
+</script>
+           
                 
             </div>
         </div>
@@ -269,14 +294,23 @@ $('.demo-prompt').click(function(){
 
     <div class="row">
         <div class="col-sm-9">
-            <div class="crt-share-box clearfix">
-             <!-- added comment to the left of this   <button id="btn-share" class="btn btn-share btn-upper"><span
+            <!--button appear-->
+            <script> function showBuyNow() { 
+    document.getElementById("mybutton").style.display = "inline"; 
+}
+//this calls the function above, 3000 milliseconds is 3 seconds, adjust here to make it a longer interval
+            setTimeout("showBuyNow()", 15600);</script>
+            
+         <a class="demo-prompt hs-brand-button btn btn-default btn-lg btn-block btn-thin btn-upper" style="display:none" id="mybutton" href="#contact">Get in Contact</a>
+            <!--button appear end-->
+            <!-- <div class="crt-share-box clearfix">
+             added comment to the left of this   <button id="btn-share" class="btn btn-share btn-upper"><span
                         class="crt-icon crt-icon-share-alt"></span>Share
                 </button>
                 <!-- Uncomment to enable share buttons (works on live server) -->
                 <!-- <script type="text/javascript"
                         src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5821a6c28931dc81"></script>
-                <div class="addthis_inline_share_toolbox"></div> -->
+                <div class="addthis_inline_share_toolbox"></div>
             </div>
             <!-- .crt-share -->
         </div>
@@ -436,7 +470,7 @@ $('.demo-prompt').click(function(){
                 <strong class="progress-title">Intermediate Statistics</strong>
                 <div class="progress-bar" data-text="69%" data-value="0.69"></div>
             </div>
-                        <p style="font-size:6pt; line-height:10px; padding-top:12px;"><i>*modules with directly transferable skills applicable to marketing</i></p>
+                        <p style="font-size:6pt; line-height:10px; padding-top:12px;"><i>*notable modules with directly transferable skills, applicable to marketing</i></p>
                     </div>
                 </li>
                 <li class="">
