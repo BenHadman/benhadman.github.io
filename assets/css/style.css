@@ -1449,6 +1449,16 @@ textarea.form-item {
 .brd-btm {
     border-bottom: 1px solid transparent;
 }
+.clap {
+    border-top: 1px solid #e1e1e1;
+    padding-top: 1.15em;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 1.15em;
+    font-weight: 700;
+    line-height: 1.1;
+    color:#010101;
+    margin-bottom:1.15em;
+}
 
 .btn-clear {
     border: 0;
@@ -2202,7 +2212,7 @@ img.aligncenter {
  */
 .alert {
     position: relative;
-    padding: 13px 30px 13px 15px;
+    padding: 13px 15px 13px 15px;
     margin-bottom: 22px;
     border-radius: 4px;
 }
@@ -5445,7 +5455,7 @@ yx-axis
  */
 .crt-card {
     padding: 30px 20px 20px 20px;
-    background-color: #A6DFF0 !important;
+    background-color: #83def3 !important;
 }
 
 .crt-card-info {
