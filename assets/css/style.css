@@ -6483,6 +6483,16 @@ yx-axis
         width: 43%;
         padding-left: 4%;
     }
+    .pf-popup-col1-2 {
+        float: left;
+        width: 33%;
+    }
+
+    .pf-popup-col2-2 {
+        float: left;
+        width: 66%;
+        padding-left: 4%;
+    }
 
     .pf-popup-content {
         max-width: 900px;

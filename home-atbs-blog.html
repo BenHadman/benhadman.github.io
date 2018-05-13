@@ -35,6 +35,7 @@
     <link href="assets/css/plugins.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/typing.css" rel="stylesheet">
+    <link href="assets/css/atbs.css" rel="stylesheet">
     <!--vexmodal-->
     <script src="/assets/js/vex.combined.min.js"></script>
 <script>vex.defaultOptions.className = 'vex-theme-os'</script>
@@ -277,79 +278,25 @@ $('.demo-prompt').click(function(){
     <div class="row">
         <div class="col-sm-12">
             <h2 class="title-lg text-upper">About Me</h2>
-<!--<div class="typewriter">
-  <h1>Talk to me about...</h1>
-</div>-->
-            <!--TYPING KIT-->
-            <div class="text-box">
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typeit/4.4.0/typeit.min.js"></script>
-            <span class="type-it"></span>
-            <p id="example4"></p> 
-            <script>
-$('#example4').typeIt({
-     speed: 42,
-     autoStart: false,
-     lifeLike: true,
-})
-.tiType('HI')
-.tiPause(500)
-.tiDelete(2)
-.tiType('Hi, ')
-.tiPause(1000)
-.tiType('I\'m Ben,')
-.tiBreak() .tiPause(500)
-.tiType('I made this online CV to demonstrate some web design skills...  ')
-.tiBreak() .tiPause(500)
-.tiType('I\'m looking to specialise in digital marketing and have full marketing mix experience.')
-.tiBreak() .tiPause(500)
-              
-.tiType('Check out this website for more info or get in touch with any opportunities...')
-.tiPause(750)
-.tiSettings({speed: 42})
-</script>
-           
-                
-            </div>
+            <div class="atbs">
+<svg viewBox="0 0 1200 300">
+  <!-- Symbol-->
+  <symbol id="s-text">
+    <text text-anchor="middle" x="50%" y="50%" dy=".35em">Automate the Boring Shit</text>
+  </symbol>
+  <!-- Duplicate symbols-->
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+</svg>   
+                </div>
         </div>
     </div>
-    <!--animated Headlines try-->  <!--
-    <section class="cd-intro">
-		<h1 class="cd-headline letters type">
-			<span>My favourite food is</span> 
-			<span class="cd-words-wrapper waiting">
-				<b class="is-visible">pizza</b>
-				<b>sushi</b>
-				<b>steak</b>
-			</span>
-		</h1>
-	</section> -->
-    <!--animated Headines try end-->
-    <!-- .row -->
 
     <div class="row">
-        <div class="col-sm-9" style="padding-top:10px;">
-            <!--button appear-->
-            <script> function showBuyNow() { 
-    document.getElementById("mybutton").style.display = "inline"; 
-}
-//this calls the function above, 3000 milliseconds is 3 seconds, adjust here to make it a longer interval
-            setTimeout("showBuyNow()", 15600);</script>
-            
-         <a class="demo-prompt hs-brand-button btn btn-default btn-lg btn-block btn-thin btn-upper" style="display:none;" id="mybutton" href="#contact">Get in Contact</a>
-            <!--button appear end-->
-            <!-- <div class="crt-share-box clearfix">
-             added comment to the left of this   <button id="btn-share" class="btn btn-share btn-upper"><span
-                        class="crt-icon crt-icon-share-alt"></span>Share
-                </button>
-                <!-- Uncomment to enable share buttons (works on live server) -->
-                <!-- <script type="text/javascript"
-                        src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5821a6c28931dc81"></script>
-                <div class="addthis_inline_share_toolbox"></div>
-            </div>
-            <!-- .crt-share -->
-        </div>
-        <div class="col-sm-3 text-right">
-            <img src="assets/images/uploads/signature.png" alt="signature">
+        <div class="col-sm-12">
         </div>
     </div>
     <!-- .row -->

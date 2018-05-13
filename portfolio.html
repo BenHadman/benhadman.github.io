@@ -35,6 +35,7 @@
     <link href="assets/css/plugins.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/typing.css" rel="stylesheet">
+    <link href="assets/css/atbs.css" rel="stylesheet">
     <!--vexmodal-->
     <script src="/assets/js/vex.combined.min.js"></script>
 <script>vex.defaultOptions.className = 'vex-theme-os'</script>
@@ -43,31 +44,7 @@
     
     <!-- Modernizer -->
     <script type="text/javascript" src="assets/js/vendor/modernizr-3.3.1.min.js"></script>
-    <!--drift-->
-    <!-- Start of Async Drift Code -->
-<script>
-!function() {
-  var t;
-  if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
-  t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-  t.factory = function(e) {
-    return function() {
-      var n;
-      return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-    };
-  }, t.methods.forEach(function(e) {
-    t[e] = t.factory(e);
-  }), t.load = function(t) {
-    var e, n, o, i;
-    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
-    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
-    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-  });
-}();
-drift.SNIPPET_VERSION = '0.3.1';
-drift.load('hc97a9hn2uny');
-</script>
-<!-- End of Async Drift Code -->
+   
     <!--animated headlines--><!--
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/css/reset.css"> <!-- CSS reset --> <!--
@@ -94,7 +71,8 @@ drift.load('hc97a9hn2uny');
 
                             <ul class="clear-list">
                                 <li><a href="index.html">home</a></li>
-                                <li><a href="#experience">experience</a>
+                                <li><a href="index.html#experience">experience</a></li>
+                                <li><a href="#portfolio">portfolio</a></li>
                                 <!--<li class="has-sub-menu"><a href="#">pages</a>
                                     <ul class="sub-menu">
                                         <li><a href="typography.html">typography</a></li>
@@ -142,16 +120,16 @@ drift.load('hc97a9hn2uny');
                 
             </li>
             <li>
-                <a href="#experience" data-tooltip="Experience"><span
+                <a href="index.html#experience" data-tooltip="Experience"><span
                         class="crt-icon crt-icon-experience"></span></a>
             </li>
              <li>
                 <a href="#contact" data-tooltip="Contact"><span class="crt-icon crt-icon-contact"></span></a>
             </li>
             <li>
-           <!-- <li>
+            <li>
                 <a href="portfolio.html" data-tooltip="Portfolio"><span class="crt-icon crt-icon-portfolio"></span></a>
-            </li>-->
+            </li>
             <!--<li>
                 <a href="testimonials.html" data-tooltip="References"><span class="crt-icon crt-icon-references"></span></a>
             </li>
@@ -231,18 +209,18 @@ $('.demo-prompt').click(function(){
                         <a href="index.html" data-tooltip="Home"><img class="avatar avatar-42" src="assets/images/uploads/avatar/avatar-42x42.png" srcset="assets/images/uploads/avatar/avatar-84x84-2x.png 2x" alt=""></a>
                             </li>
                         <li>
-                            <a href="#experience" data-tooltip="Experience"><span
+                            <a href="index.html#experience" data-tooltip="Experience"><span
                                     class="crt-icon crt-icon-experience"></span></a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html" data-tooltip="Portfolio"><span
+                                    class="crt-icon crt-icon-portfolio"></span></a>
                         </li>
                          <li>
                             <a href="#contact" data-tooltip="Contact"><span
                                     class="crt-icon crt-icon-contact"></span></a>
                         </li>
-                        <!--<li>
-                        <!--<li>
-                            <a href="portfolio.html" data-tooltip="Portfolio"><span
-                                    class="crt-icon crt-icon-portfolio"></span></a>
-                        </li>-->
+                        
                        <!-- <li>
                             <a href="testimonials.html" data-tooltip="References"><span
                                     class="crt-icon crt-icon-references"></span></a>
@@ -275,7 +253,9 @@ $('.demo-prompt').click(function(){
 
                 <section class="section">
                     <h2 class="title-lg text-upper padd-box">portfolio</h2>
-
+                    <div class="text-box padd-box"><p>Here are a few projects I have worked on recently. Feel free to get in touch if you would like to know more about how they were executed.<a href="#contact" class="btn btn-light btn-sm" role="button" style="float:right;margin-top:15px;border-color: #F3F3F3; border: 1px">
+    <span class="crt-icon crt-icon-location-arrow"></span>Contact
+</a></p><hr class="dotted"></div>
                     <div class="pf-wrap">
                         <div class="pf-filter padd-box">
                             <button data-filter="*">all</button>
@@ -290,16 +270,16 @@ $('.demo-prompt').click(function(){
                             <div class="pf-grid-item photography">
                                 <a class="pf-project" href="#pf-popup-1">
                                     <figure class="pf-figure">
-                                        <img src="assets/images/uploads/portfolio/prj-01.jpg" alt="">
+                                        <img style="padding:120px 0px 120px 0px" src="assets/images/uploads/blog/atbs.PNG" alt="automate-the-boring-shit">
                                     </figure>
 
                                     <div class="pf-caption text-center">
                                         <div class="valign-table">
                                             <div class="valign-cell">
-                                                <h2 class="pf-title text-upper">stu unger rise</h2>
+                                                <h2 class="pf-title text-upper">Lead Handling Automation</h2>
 
                                                 <div class="pf-text clear-mrg">
-                                                    <p>Accessories Here you can find the best computer monitor, printer, scanner, speaker, projector. hardware and more</p>
+                                                    <p>I developed a sophisticated, automated workflow to seamlessly integrate inbound leads into our CRM system and disseminate to the relevant salespeople around the world.</p>
                                                 </div>
 
                                                 <button class="pf-btn btn btn-primary">View More</button>
@@ -312,88 +292,46 @@ $('.demo-prompt').click(function(){
                                     <div class="pf-popup-col1">
                                         <div class="pf-popup-media cr-slider" data-init="none">
                                             <div class="pf-popup-embed">
+                                              <div class="atbs">
+<svg viewBox="0 0 650 450">
+  <!-- Symbol-->
+  <symbol id="s-text">
+    <text text-anchor="middle" x="50%" y="40%" dy=".35em">Automate the</text>
+      <text text-anchor="middle" x="50%" y="60%" dy=".35em">Boring Shit</text>
+  </symbol>
+  <!-- Duplicate symbols-->
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+</svg>   
+                </div>
+                                            </div>
+
+                                            <!--<div class="pf-popup-embed">
                                                 <img src="assets/images/uploads/portfolio/prj-01.jpg" alt="">
                                             </div>
 
                                             <div class="pf-popup-embed">
                                                 <img src="assets/images/uploads/portfolio/prj-01.jpg" alt="">
-                                            </div>
-
-                                            <div class="pf-popup-embed">
-                                                <img src="assets/images/uploads/portfolio/prj-01.jpg" alt="">
-                                            </div>
+                                            </div>-->
                                         </div>
                                     </div><!-- .pf-popup-col1 -->
 
                                     <div class="pf-popup-col2">
                                         <div class="pf-popup-info">
-                                            <h2 class="pf-popup-title text-upper">Rs Project</h2>
+                                            <h2 class="pf-popup-title text-upper">Lead Handling Automation</h2>
 
-                                            <div class="text-muted"><strong>design / development</strong></div>
+                                            <div class="text-muted"><strong>automation</strong></div>
 
                                             <dl class="dl-horizontal">
                                                 <dt>Date:</dt>
-                                                <dd>11 Jan 2012</dd>
-
-                                                <dt>Site link:</dt>
-                                                <dd><a href="www.sitedomen.html">www.sitedomen.com</a></dd>
-
-                                                <dt>Client:</dt>
-                                                <dd>11 Jan 2012</dd>
+                                                <dd>11 Dec 2017</dd>
                                             </dl>
 
-                                            <p>About 64% of all on-line teens say that do things online that they wouldn’t want their
-                                                parents to know about. 11% of all adult internet users visit dating websites and spend their
-                                                time in chatrooms.</p>
+                                            <p>I developed a sophisticated, automated workflow to seamlessly integrate inbound leads into our CRM system and disseminate to the relevant salespeople around the world. The system was able to insert lead, contact and account information into Salesforce, checking for duplicates and appending to existing information where necessary. The data would be enriched to provide salespeople with better insights into their prospects. This process previously relied on somebody working in a full time role to manually manage this process and the result of the project meant this person was able to concentrate their time on higher value work.</p>
                                         </div><!-- .pf-popup-info -->
-
-                                        <div class="pf-popup-rel">
-                                            <h2 class="text-upper">More Projects</h2>
-
-                                            <div class="pf-rel-list cr-carousel" data-init="none">
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover" href="#">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover" href="#">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover" href="#">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover" href="#">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover" href="#">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-                                            </div><!-- .pf-rel-projects -->
-                                        </div><!-- .pf-popup-rel -->
                                     </div><!-- .pf-popup-col2 -->
                                 </div><!-- .pf-popup -->
                             </div><!-- .pf-grid-item -->
@@ -401,16 +339,61 @@ $('.demo-prompt').click(function(){
                             <div class="pf-grid-item design">
                                 <a class="pf-project" href="#pf-popup-2">
                                     <figure class="pf-figure">
-                                        <img src="assets/images/uploads/portfolio/prj-02.jpg" alt="">
+                                                 
+ <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 729 490" enable-background="new 0 0 729 490" xml:space="preserve">
+
+	<defs>
+		<clipPath id="mm1">
+			<rect x="184.279" y="77.308" width="87.764" height="120"></rect>
+		</clipPath>
+	</defs>
+
+<g id="bg">
+	<rect y="-2" fill="#ffffff" width="729" height="406"/>
+</g>
+<g id="Layer_2">
+	<polygon id="a1t" fill="#f0a6df" points="69.367,182.431 163.274,182.431 115.467,82.384 	"/>
+	
+	<g clip-path="url(#mm1)">
+		<circle id="a2c" fill="#f0dca6" cx="228.161" cy="136.032" r="43.883"/>
+		<rect class="mult" id="a2r" x="184.279" y="77.308" fill="#83def3" width="87.764" height="58.725"/>	
+	</g>
+
+	<rect id="a3v" x="308.974" y="76.903" fill="#83def3" width="39.365" height="109.706"/>
+	<rect class="mult" id="a3h" x="290.904" y="76.903" fill="#f0a6df" width="74.857" height="34.203"/>
+
+	<circle id="a4b" fill="#f0dca6" cx="428.004" cy="130.934" r="51.626"/>
+	<circle id="a4s" class="mult" fill="#f0a6df" cx="428.004" cy="130.934" r="23.876"/>
+
+	<rect id="a5r" x="494.182" y="114.737" fill="#83def3" width="48.399" height="31.621"/>
+
+	<polygon id="b1l" fill="#83def3" points="174,333.453 68,227 68,333 	"/>
+	<polygon class="mult" id="b1r" fill="#f0dca6" points="68,333.453 174,227 174,333 	"/>
+	
+	<polygon id="b2t" fill="#a6f0b7" points="199.432,333.984 293.339,333.984 245.532,222 	"/>
+
+	<rect id="b3v" x="318.008" y="222.747" fill="#f0a6df" width="39.365" height="109.706"/>
+	<rect class="mult" id="b3h" x="299.939" y="222.747" fill="#f0dca6" width="74.858" height="34.202"/>
+	
+
+	<circle id="b5b" fill="#f0a6df" cx="501.926" cy="279.005" r="51.626"/>
+	<circle class="mult" id="b5s" fill="#83def3" cx="501.926" cy="279.005" r="23.876"/>
+
+	<rect class="mult" id="b4r" x="388.994" y="222.747" fill="#83def3" width="39.365" height="109.706"/>
+	
+	<polygon id="b6l" fill="#f0dca6" points="662.359,333.453 578,227 578,333 	"/>
+	<rect class="mult" id="b6r" x="621.994" y="223.747" fill="#83def3" width="39.365" height="109.706"/>
+</g>
+</svg>
                                     </figure>
 
                                     <div class="pf-caption text-center">
                                         <div class="valign-table">
                                             <div class="valign-cell">
-                                                <h2 class="pf-title text-upper">stu unger rise</h2>
+                                                <h2 class="pf-title text-upper">Marketing Qualified Leads</h2>
 
                                                 <div class="pf-text clear-mrg">
-                                                    <p>Accessories Here you can find the best computer monitor, printer, scanner, speaker, projector. hardware and more</p>
+                                                    <p>Working with marketing automation system (Act-On) I developed a system for the introduction of Marketing Qualified Leads into our funnel.</p>
                                                 </div>
 
                                                 <button class="pf-btn btn btn-primary">View More</button>
@@ -421,99 +404,91 @@ $('.demo-prompt').click(function(){
 
                                 <div id="pf-popup-2" class="pf-popup clearfix">
                                     <div class="pf-popup-col1">
-                                        <div class="pf-popup-media cr-slider" data-init="none">
+                                        <div class="pf-popup-media cr-slider" data-init="none" style="background:#ffffff">
                                             <div class="pf-popup-embed">
-                                                <img src="assets/images/uploads/portfolio/prj-02.jpg" alt="">
+                                                         
+ <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 650 450" enable-background="new 0 0 650 450" xml:space="preserve">
+
+	<defs>
+		<clipPath id="mm1">
+			<rect x="184.279" y="77.308" width="87.764" height="120"></rect>
+		</clipPath>
+	</defs>
+
+<g id="bg">
+	<rect y="-2" fill="#ffffff" width="729" height="406"/>
+</g>
+<g id="Layer_2">
+	<polygon id="a1t" fill="#f0a6df" points="69.367,182.431 163.274,182.431 115.467,82.384 	"/>
+	
+	<g clip-path="url(#mm1)">
+		<circle id="a2c" fill="#f0dca6" cx="228.161" cy="136.032" r="43.883"/>
+		<rect class="mult" id="a2r" x="184.279" y="77.308" fill="#83def3" width="87.764" height="58.725"/>	
+	</g>
+
+	<rect id="a3v" x="308.974" y="76.903" fill="#83def3" width="39.365" height="109.706"/>
+	<rect class="mult" id="a3h" x="290.904" y="76.903" fill="#f0a6df" width="74.857" height="34.203"/>
+
+	<circle id="a4b" fill="#f0dca6" cx="428.004" cy="130.934" r="51.626"/>
+	<circle id="a4s" class="mult" fill="#f0a6df" cx="428.004" cy="130.934" r="23.876"/>
+
+	<rect id="a5r" x="494.182" y="114.737" fill="#83def3" width="48.399" height="31.621"/>
+
+	<polygon id="b1l" fill="#83def3" points="174,333.453 68,227 68,333 	"/>
+	<polygon class="mult" id="b1r" fill="#f0dca6" points="68,333.453 174,227 174,333 	"/>
+	
+	<polygon id="b2t" fill="#a6f0b7" points="199.432,333.984 293.339,333.984 245.532,222 	"/>
+
+	<rect id="b3v" x="318.008" y="222.747" fill="#f0a6df" width="39.365" height="109.706"/>
+	<rect class="mult" id="b3h" x="299.939" y="222.747" fill="#f0dca6" width="74.858" height="34.202"/>
+	
+
+	<circle id="b5b" fill="#f0a6df" cx="501.926" cy="279.005" r="51.626"/>
+	<circle class="mult" id="b5s" fill="#83def3" cx="501.926" cy="279.005" r="23.876"/>
+
+	<rect class="mult" id="b4r" x="388.994" y="222.747" fill="#83def3" width="39.365" height="109.706"/>
+	
+	<polygon id="b6l" fill="#f0dca6" points="662.359,333.453 578,227 578,333 	"/>
+	<rect class="mult" id="b6r" x="621.994" y="223.747" fill="#83def3" width="39.365" height="109.706"/>
+</g>
+</svg>
+                                                <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
                                             </div>
                                         </div>
                                     </div><!-- .pf-popup-col1 -->
 
                                     <div class="pf-popup-col2">
                                         <div class="pf-popup-info">
-                                            <h2 class="pf-popup-title text-upper">Rs Project</h2>
+                                            <h2 class="pf-popup-title text-upper">Marketing Qualified Leads</h2>
 
-                                            <div class="text-muted"><strong>design / development</strong></div>
+                                            <div class="text-muted"><strong>automation</strong></div>
 
                                             <dl class="dl-horizontal">
                                                 <dt>Date:</dt>
-                                                <dd>11 Jan 2012</dd>
-
-                                                <dt>Site link:</dt>
-                                                <dd><a href="www.sitedomen.html">www.sitedomen.com</a></dd>
-
-                                                <dt>Client:</dt>
-                                                <dd>11 Jan 2012</dd>
+                                                <dd>01 May 2018</dd>
                                             </dl>
 
-                                            <p>About 64% of all on-line teens say that do things online that they wouldn’t want their
-                                                parents to know about. 11% of all adult internet users visit dating websites and spend their
-                                                time in chatrooms.</p>
+                                            <p>Working with marketing automation system (Act-On) I developed a system for the introduction of Marketing Qualified Leads into our funnel. This connected the sales team with prospects before they had made an explicit enquiry. By manually accessing the Act-On Developer API I was able to build statistical relationship between engaged leads already in our funnel and their tracked online behaviour, in addition to this demographic data was built into the model. Using these relationships I described a scoring model whereby each specific behaviour (page visit, download, time on site) was assigned a lead score. Each visitor to the site accrued a lead score and when this went above a certain threshold (comparable to existing, qualified leads) their details would be sent into Salesforce as a MQL to be worked on by the sales team. <br>
+This project improved upon the typical methods that marketing teams execute MQL processes by being data driven in the approach to lead score assignment, in most cases guess work is used to assign the scores to each specific behaviour which can lead to low quality leads entering the funnel and poor conversion rates. In my case I used a machine learning prediction technique called logistic regression to approach the problem using data not gut feeling.
+</p>
                                         </div><!-- .pf-popup-info -->
-
-                                        <div class="pf-popup-rel">
-                                            <h2 class="text-upper">More Projects</h2>
-
-                                            <div class="pf-rel-list cr-carousel" data-init="none">
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover" href="#">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover" href="#">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover" href="#">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover" href="#">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover" href="#">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-                                            </div><!-- .pf-rel-projects -->
-                                        </div><!-- .pf-popup-rel -->
                                     </div><!-- .pf-popup-col2 -->
                                 </div><!-- .pf-popup -->
                             </div><!-- .pf-grid-item -->
 
                             <div class="pf-grid-item photography">
                                 <a class="pf-project" href="#pf-popup-3">
-                                    <figure class="pf-figure">
-                                        <img src="assets/images/uploads/portfolio/prj-03.jpg" alt="">
+                                    <figure class="pf-figure" style="margin:12px; padding-top:23px;padding-bottom: 23px;">
+                                        <img src="assets/images/uploads/portfolio/salesforce.svg" alt="salesforce-logo">
                                     </figure>
 
                                     <div class="pf-caption text-center">
                                         <div class="valign-table">
                                             <div class="valign-cell">
-                                                <h2 class="pf-title text-upper">stu unger rise</h2>
+                                                <h2 class="pf-title text-upper">Salesforce</h2>
 
                                                 <div class="pf-text clear-mrg">
-                                                    <p>Accessories Here you can find the best computer monitor, printer, scanner, speaker, projector. hardware and more</p>
+                                                    <p>I undertook a project to overhaul the usage of Salesforce CRM developing the underutilised platform to streamline workflows, create productivity features and generate useful data for further optimisation and analysis.</p>
                                                 </div>
 
                                                 <button class="pf-btn btn btn-primary">View More</button>
@@ -524,90 +499,124 @@ $('.demo-prompt').click(function(){
 
                                 <div id="pf-popup-3" class="pf-popup clearfix">
                                     <div class="pf-popup-col1">
-                                        <div class="pf-popup-media cr-slider" data-init="none">
+                                        <div class="pf-popup-media cr-slider" style="background:#ffffff" data-init="none">
                                             <div class="pf-popup-embed">
-                                                <img src="assets/images/uploads/portfolio/prj-03.jpg" alt="">
+<?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 650 500" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<title>Salesforce SVG Animation</title>
+<path class="st0 tail" d="M213.1,346c-14.2-5.6-27.6-13.1-39.8-22.3c-17.1-13-45.8-18.4-45.8-18.4s13,18,11.8,20.5
+    c-1.8,3.9-33.4-6.7-49.8-57.2c-19,40.4-1.4,72.8-4,75.4s-13.9-6-22.6-16.3c0,0,7.7,40.4,58.8,77.6c5.2,3.8-7.9,1.5-24.9-2.6
+    c0,0,39.9,49.1,116.6,5.4S213.1,346,213.1,346z"/>
+<path id="_Path_" class="st1" d="M164.8,320.7l2.6,12.6l9.2,6.3l-3.5,15.7c0,0,7.3,14.8,6.5,14.8l-13.4-3.9l7.1,11.1l-3.6,11.5
+    l10.3,9.6l-0.5,5.7l16.8,9.4l-18.7,3.7l-9.8-5.2l-0.4-12.4l-10.7-6.5l5.3-17.2l-11.2-18.8l11.5-0.6l2.4-12.5l-6.7-7.3l-3.5-20.9
+    L164.8,320.7z"/>
+<polygon id="_Path_2" class="st1" points="142.8,328.4 138.5,353.4 152.9,374.8 142,377.9 151.1,388.4 143.7,399.2 157.2,422.6 
+    138.8,420.7 131.9,395.9 139.7,385.8 133.8,375.4 125.6,363.1 134.4,362.5 125.8,349.6 131.9,342.8 125.2,329 "/>
+<path id="_Path_3" class="st1" d="M123.4,328.1l-9.2,10c0,0,6.6,26.7,4.8,25.3l-7.1-5.1l1.4,13.5l-7,4.8l8.6,16.6l-22.4-18.6
+    l9.2-12.9L99,341.6l10.1,3.7l-8.2-18.9h8.6l-1.1-14.7L123.4,328.1z"/>
+<path id="_Path_4" class="st2" d="M198.4,263.4c0,0-115-67.2-34.4-183.4c0,0,28.6-40.1,80.7-41.8c0,0,102.6-15.7,145.5,41
+    c43.5,57.6,58.9,130.5-31.4,187.6C358.9,266.9,285.5,304.4,198.4,263.4z"/>
+<g class="left-ear">
+  <path id="_Path_5" class="st2 ears" d="M237.1,41.4c0,0-87.3-86.7-68.9,36.1"/>
+<path id="_Path_6" class="st1 ears" d="M177.8,75.3c-8-10.1-6.9-46.4,7.2-51c0,0,6.8-0.7,11,3.2c0,0,30.7,26.3,14.6,41.8
+    C196.7,82.7,183,81.8,177.8,75.3z"/>
+<path id="_Path_7" class="st1 ears" d="M177.8,75.3l0.9-0.7c-1.5-1.9-2.8-5.1-3.6-9c-0.9-4.3-1.2-8.6-1.1-13c0-5.9,1.1-11.8,3.1-17.5
+    c0.8-2.3,2-4.4,3.6-6.3c1.2-1.6,2.9-2.7,4.8-3.4l-0.3-1.1l0.1,1.1l0,0c0.5,0,0.9,0,1.4,0c1.4,0,2.8,0.2,4.2,0.6
+    c1.7,0.4,3.2,1.2,4.5,2.4l0,0l0,0h0.1c3.6,3.2,7,6.8,10,10.6c2.4,3,4.5,6.2,6.2,9.7c1.7,3.2,2.6,6.7,2.6,10.3
+    c-0.1,3.7-1.6,7.1-4.3,9.6c-7.8,7.5-15.5,10.3-21.5,10.2c-4.4-0.1-7.7-1.7-9.7-4.2L177.8,75.3l-0.9,0.7c2.4,3.1,6.5,4.9,11.4,5
+    c6.7,0.1,14.9-3,23.1-10.8c3.1-2.9,4.9-6.9,5-11.2c-0.1-4.1-1.1-8-3-11.6c-2.8-5.3-6.3-10.2-10.4-14.5c-2-2.2-4.1-4.2-6.3-6.2
+    l-0.7,0.9l0.8-0.8c-1.6-1.4-3.4-2.4-5.5-2.9c-1.5-0.4-3.1-0.6-4.7-0.7c-1,0-1.7,0-1.7,0h-0.1h-0.1c-2.3,0.8-4.3,2.2-5.8,4.1
+    c-2.5,3.3-4.3,7.1-5.3,11.2c-1.2,4.6-1.8,9.3-1.9,14.1c-0.1,4.5,0.3,9.1,1.1,13.5c0.9,4.1,2.2,7.6,4.1,9.9L177.8,75.3z"/>
+  </g>
+<path id="_Path_8" class="st1" d="M156.2,108.7c0,0-49.1,89.9,40.7,140.7C196.9,249.4,125.9,188.5,156.2,108.7z"/>
+<path id="_Path_9" class="st2 right-ear" d="M323.2,43.7c0,0,90.1-83.7,67.7,38.4"/>
+<path id="_Path_10" class="st1 right-ear" d="M382.5,79.6c8.3-9.8,8.4-46.2-5.5-51.2c0,0-6.7-0.9-11.1,2.9c0,0-31.6,25.3-16,41.3
+    C363.3,86.4,377.1,85.9,382.5,79.6z"/>
+<path id="_Path_11" class="st1 right-ear" d="M382.5,79.6l0.9,0.7c1.9-2.2,3.3-5.6,4.3-9.5c1-4.3,1.6-8.7,1.7-13.1c0.2-6.3-0.6-12.7-2.5-18.7
+    c-0.8-2.6-2.1-5.1-3.7-7.3c-1.5-2-3.4-3.5-5.7-4.4h-0.1h-0.1c-0.5-0.1-1-0.1-1.5-0.1c-1.6,0-3.2,0.1-4.8,0.5c-2.1,0.4-4,1.4-5.7,2.8
+    l0.7,0.9l-0.7-0.9c-3.7,3.1-7.1,6.4-10.2,10c-2.7,3.1-5.1,6.4-7.1,10c-2,3.5-3.2,7.4-3.5,11.5c-0.1,4.3,1.6,8.5,4.6,11.5
+    c7.8,8,15.9,11.4,22.6,11.6c5,0.1,9.2-1.6,11.8-4.6L382.5,79.6l-0.9-0.7c-2.1,2.4-5.6,3.9-10,3.8c-5.9-0.1-13.5-3.2-21-10.9
+    c-2.7-2.6-4.1-6.2-4-9.9c0.2-3.7,1.3-7.3,3.2-10.4c2.8-5,6.4-9.6,10.5-13.6c1.8-1.8,3.3-3.2,4.5-4.2l1.3-1.1
+    c0.1-0.1,0.2-0.2,0.4-0.3l0.1-0.1l0,0l0,0c1.4-1.1,3-1.9,4.7-2.3c1.4-0.3,2.8-0.5,4.2-0.4c0.4,0,0.7,0,1,0.1h0.2h0.1l0.1-1.1
+    l-0.4,1.1c1.9,0.7,3.5,2,4.7,3.7c2.3,3.2,3.8,6.9,4.5,10.8c1,4.5,1.5,9.2,1.4,13.8c-0.1,4.2-0.6,8.5-1.6,12.6c-0.7,3.1-2,6-3.8,8.6
+    L382.5,79.6z"/>
+<path id="_Path_12" class="st3" d="M384.2,173.4c1,38.2-28.2,71.4-69.5,83.6c-10.3,3-20.9,4.7-31.6,5c-44.3,1.2-82.7-21-98.3-53.1
+    c-0.4-0.9-0.9-1.9-1.3-2.8c-3.8-8.6-5.8-17.8-6.1-27.2c-1.2-47.4,46.1-88.4,103.2-89.9c10.2-0.3,20.4,0.7,30.4,3.1
+    C353,102.2,383.2,134.8,384.2,173.4z"/>
+<ellipse  class="st4 left-eye" cx="230.7" cy="201.1" rx="10" ry="15"/>
+<ellipse  class="st4 right-eye" cx="323.4" cy="207.8" rx="10" ry="15"/>
+<path class="st4" d="M193.2,221.7c0,0-9.4-60,5.6-61.6c0,0,7.9,9.9,13,9.8c1,0-3.5-30.5,12.8-40c0,0,58.6,22.5,65.2,9.1
+    c-2-1.1-23.5-9.1-22.7-18.5c0.5-5.2,46-4.9,66.1,39.2c3.4,1.9,8.4-6.5,9.6-18.7c2.1-22.8,18.7,38.3,19.1,39.2s4.9-1.4,8.7-7
+    s2.6,36.7,1.8,41s14.8-18,12.4-46.6s-28-58.6-50.2-67.5c-21.1-8.5-56.7-23.8-111.5,4.3c-58.2,29.9-44.6,91.4-44.4,92.5
+    C180.4,203.7,190.8,221.1,193.2,221.7z"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="289.7656" y1="278.6893" x2="297.9551" y2="105.4657" gradientTransform="matrix(0.9996 2.949179e-02 2.949179e-02 -0.9996 -16.7595 577.7911)">
+    <stop  offset="0.4" style="stop-color:#8D735E"/>
+    <stop  offset="0.69" style="stop-color:#8B715D"/>
+    <stop  offset="0.83" style="stop-color:#836B58"/>
+    <stop  offset="0.94" style="stop-color:#766151"/>
+    <stop  offset="1" style="stop-color:#6C594B"/>
+</linearGradient>
+<path class="st5" d="M221.3,268.3c46.7,18.8,124.4-3.3,135.3-5.7c0.8-0.2,4.6,0,5.3,0.4c6,3.8,39.6,27.6,46,49.8
+    c0.2,0.6,0.1,1.3-0.1,1.9l-13.6,36.4c-0.3,0.8-0.9,1.4-1.7,1.8l-19.5,7.6c-1.5,0.6-3.1-0.1-3.8-1.5c-2.6-5.3-9.4-17.8-18.3-26.3
+    c-1.2-1.2-3.1-1.1-4.2,0c-0.7,0.7-1,1.7-0.8,2.6c2,12.5,7.2,34.7,11,56.1c5.7,32.1,12.7,40,21.6,58.5c10,20.9-5.3,50.2-49.4,49.8
+    c-34.6-0.4-52.2-12.2-47.6-41.6c2.9-18.3,0.9-43.9-12-43.9s-13.9,23.7-10.1,42.8c7.3,37.5-37.4,43.1-65.2,37.4
+    c-29.8-6.2-44.7-27.7-32.9-50.5c10.6-20.4,15.5-31.2,17.1-68.5c1.5-35.2,0.3-56.8,1.1-69.8"/>
+<g id="ARM" class="arm-wave">
+        <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="176.5925" y1="334.9932" x2="179.2582" y2="278.6074" gradientTransform="matrix(0.9996 2.949179e-02 2.949179e-02 -0.9996 -16.7595 577.7911)">
+        <stop  offset="0.4" style="stop-color:#8D735E"/>
+        <stop  offset="0.69" style="stop-color:#8B715D"/>
+        <stop  offset="0.9308" style="stop-color:#8B715D"/>
+    </linearGradient>
+    <path class="st6" d="M182.8,310.7c0.1-1.3-0.7-2.6-2-3c-9.4-3.5-48-19.7-65.6-58.1c-0.7-1.5,0-3.3,1.5-4c0.2-0.1,0.5-0.2,0.7-0.2
+        l69.7-11.8c1.3-0.2,2.7,0.5,3.2,1.7c3.2,7.1,14.9,30.2,34.3,38"/>
+    <path class="st7" d="M164.6,262.2c18.3-10,21-25.3,31.8-42.7s12-27.9,0.7-36.3c-6.4-4.7-13,1.3-17.6,7.4c-1.6,2.2-4.6,2.6-6.8,1
+        c-0.8-0.6-1.4-1.5-1.7-2.4c-3.3-10.2-10.2-24.6-24.4-29.4c-22.8-7.8-40.2-1.9-49.4,19c-8.6,19.5-4.2,49.6,21.9,78.1
+        C129.3,268,153.8,268.1,164.6,262.2z"/>
+</g>
+<path class="st7" d="M396.5,293.2c8.9,14.2,8.2,28,5.7,35.6c-5.2,15.8-14.8,18.8-28.7,23.5c-5.1,1.8-6.2,3.1-5.3,5.9
+    c2.6,8.5,7.2,25,19.4,23.5c7.4-1,10.9-4.3,12.4-7.8c1.1-2.5,4-3.7,6.6-2.6c0.4,0.2,0.7,0.4,1,0.6c5.4,4.2,15.2,11.5,25.2,5.6
+    C448.6,368.2,452.3,318.1,396.5,293.2z"/>
+<path class="st1" d="M189.6,237.4c0,0,31.7,42.9,90.9,45.3c55.5,2.3,83.4-18.7,83.4-18.7l4.7,4c0,0-33.9,26.6-91.3,19.9
+    C222.7,281.6,206.8,261.2,189.6,237.4z"/>
+<ellipse class="st1 left-eye" cx="272.4" cy="339.1" rx="0" ry="0.9"/>
+<ellipse transform="matrix(2.949183e-02 -0.9996 0.9996 2.949183e-02 -76.5715 608.2202)" class="st8" cx="274.9" cy="343.5" rx="49" ry="43.4"/>
+
+	<g>
+		<path d="M106.553203,159.610976 C114.801129,168.204994 126.284107,173.534815 138.983873,173.534815 C155.865892,173.534815 170.594851,164.121105 178.438396,150.146262 C185.254593,153.191874 192.799405,154.885905 200.737669,154.885905 C231.186506,154.885905 255.871995,129.985475 255.871995,99.2706935 C255.871995,68.5522694 231.186506,43.651839 200.737669,43.651839 C197.021731,43.651839 193.389583,44.0234329 189.877657,44.7338328 C182.970383,32.4129469 169.807947,24.0885163 154.700107,24.0885163 C148.375726,24.0885163 142.393793,25.5493901 137.067615,28.1469039 C130.065621,11.6765534 113.751923,0.127999726 94.7387049,0.127999726 C74.9385822,0.127999726 58.0638501,12.6565411 51.5864595,30.2271008 C48.7557888,29.6259931 45.8231119,29.3126885 42.8139304,29.3126885 C19.23958,29.3126885 0.127998772,48.6209959 0.127998772,72.4430755 C0.127998772,88.4070383 8.71473094,102.34545 21.4727861,109.802829 C18.8461277,115.846693 17.3852539,122.517167 17.3852539,129.53009 C17.3852539,156.926028 39.6262381,179.134225 67.0586069,179.134225 C83.1646497,179.134225 97.4782987,171.476477 106.553203,159.610976" fill="#00A1E0" transform="translate(127.999997, 89.631112) scale(1, -1) translate(-127.999997, -89.631112) "></path>
+		<path d="M37.1700744,75.3309413 C37.009779,74.9119875 37.2283636,74.8245536 37.2793667,74.7516921 C37.7602528,74.4019567 38.2484251,74.1505844 38.7402405,73.8700675 C41.3486835,72.4856983 43.8114035,72.0813168 46.3870588,72.0813168 C51.6330895,72.0813168 54.8900002,74.8719136 54.8900002,79.3638274 L54.8900002,79.4512613 C54.8900002,83.6043689 51.2141357,85.1126027 47.7641419,86.2018827 L47.3160434,86.3476058 C44.7148866,87.1927996 42.4707512,87.921415 42.4707512,89.6336611 L42.4707512,89.724738 C42.4707512,91.1892549 43.7822589,92.2676057 45.8150958,92.2676057 C48.0738034,92.2676057 50.755108,91.5171318 52.4819264,90.5626457 C52.4819264,90.5626457 52.9883141,90.2347688 53.174111,90.7265842 C53.2761172,90.9888857 54.1504556,93.3423133 54.2415326,93.5973287 C54.3398956,93.8742026 54.1650279,94.0782149 53.9865172,94.1875072 C52.0156126,95.3860795 49.2905911,96.2057718 46.4708496,96.2057718 L45.9462465,96.2021287 C41.1446712,96.2021287 37.7930405,93.3022395 37.7930405,89.1454888 L37.7930405,89.058055 C37.7930405,84.6754335 41.4907635,83.2546335 44.9553296,82.2637166 L45.5127204,82.092492 C48.0373727,81.3165166 50.2122895,80.6498336 50.2122895,78.872012 L50.2122895,78.7845782 C50.2122895,77.1597659 48.7987757,75.9502644 46.5182096,75.9502644 C45.6329419,75.9502644 42.8095574,75.9684798 39.760302,77.8956674 C39.3923513,78.110609 39.1774097,78.2672613 38.8932497,78.4384859 C38.7438836,78.5332059 38.3686467,78.6971444 38.2047082,78.2016859 L37.1700744,75.3309413 L37.1700744,75.3309413 Z" fill="#FFFFFF" transform="translate(46.001138, 84.143544) scale(1, -1) translate(-46.001138, -84.143544) "></path>
+		<path d="M113.969779,75.3309413 C113.809484,74.9119875 114.028068,74.8245536 114.079072,74.7516921 C114.559958,74.4019567 115.04813,74.1505844 115.539945,73.8700675 C118.148388,72.4856983 120.611108,72.0813168 123.186764,72.0813168 C128.432794,72.0813168 131.689705,74.8719136 131.689705,79.3638274 L131.689705,79.4512613 C131.689705,83.6043689 128.013841,85.1126027 124.563847,86.2018827 L124.115748,86.3476058 C121.514591,87.1927996 119.270456,87.921415 119.270456,89.6336611 L119.270456,89.724738 C119.270456,91.1892549 120.581964,92.2676057 122.614801,92.2676057 C124.873508,92.2676057 127.554813,91.5171318 129.281631,90.5626457 C129.281631,90.5626457 129.788019,90.2347688 129.973816,90.7265842 C130.075822,90.9888857 130.95016,93.3423133 131.041237,93.5973287 C131.1396,93.8742026 130.964733,94.0782149 130.786222,94.1875072 C128.815317,95.3860795 126.090296,96.2057718 123.270554,96.2057718 L122.745951,96.2021287 C117.944376,96.2021287 114.592745,93.3022395 114.592745,89.1454888 L114.592745,89.058055 C114.592745,84.6754335 118.290468,83.2546335 121.755034,82.2637166 L122.312425,82.092492 C124.837077,81.3165166 127.015637,80.6498336 127.015637,78.872012 L127.015637,78.7845782 C127.015637,77.1597659 125.598481,75.9502644 123.317914,75.9502644 C122.432647,75.9502644 119.609262,75.9684798 116.560007,77.8956674 C116.192056,78.110609 115.973471,78.2599751 115.696598,78.4384859 C115.601878,78.5004182 115.157422,78.6716428 115.004413,78.2016859 L113.969779,75.3309413 L113.969779,75.3309413 Z" fill="#FFFFFF" transform="translate(122.800843, 84.143544) scale(1, -1) translate(-122.800843, -84.143544) "></path>
+		<path d="M166.398769,84.1136744 C166.398769,81.5744499 165.925169,79.5744007 164.992541,78.1608868 C164.070843,76.7619453 162.675544,76.08069 160.730141,76.08069 C158.781095,76.08069 157.393083,76.7583022 156.485956,78.1608868 C155.567901,79.5707576 155.101587,81.5744499 155.101587,84.1136744 C155.101587,86.6492559 155.567901,88.6456621 156.485956,90.0446036 C157.393083,91.4289728 158.781095,92.102942 160.730141,92.102942 C162.675544,92.102942 164.070843,91.4289728 164.996184,90.0446036 C165.925169,88.6456621 166.398769,86.6492559 166.398769,84.1136744 M170.777747,88.8205297 C170.347864,90.2741174 169.677538,91.5564805 168.784984,92.623902 C167.89243,93.6949666 166.763076,94.5547327 165.422424,95.181342 C164.085415,95.8043081 162.504319,96.1212558 160.730141,96.1212558 C158.95232,96.1212558 157.371224,95.8043081 156.034215,95.181342 C154.693563,94.5547327 153.564209,93.6949666 152.668012,92.623902 C151.779101,91.5528374 151.108775,90.2704743 150.675249,88.8205297 C150.249009,87.3742282 150.034067,85.7931329 150.034067,84.1136744 C150.034067,82.434216 150.249009,80.8494776 150.675249,79.4068191 C151.108775,77.9568745 151.775458,76.6745115 152.671655,75.6034469 C153.564209,74.5323823 154.697206,73.6762592 156.034215,73.0678654 C157.374867,72.4594715 158.95232,72.14981 160.730141,72.14981 C162.504319,72.14981 164.081772,72.4594715 165.422424,73.0678654 C166.759433,73.6762592 167.89243,74.5323823 168.784984,75.6034469 C169.677538,76.6708684 170.347864,77.9532315 170.777747,79.4068191 C171.20763,80.8531206 171.422572,82.4378591 171.422572,84.1136744 C171.422572,85.7894898 171.20763,87.3742282 170.777747,88.8205297" fill="#FFFFFF" transform="translate(160.728320, 84.135533) scale(1, -1) translate(-160.728320, -84.135533) "></path>
+		<path d="M206.737482,76.7251427 C206.591759,77.1513827 206.180091,76.9910873 206.180091,76.9910873 C205.542553,76.7470012 204.864941,76.5211304 204.143612,76.408195 C203.411353,76.2952596 202.606233,76.2369704 201.742824,76.2369704 C199.622553,76.2369704 197.939452,76.8672227 196.733593,78.113155 C195.524092,79.3590873 194.846479,81.3737088 194.853766,84.0987303 C194.861052,86.5796656 195.458516,88.444921 196.533224,89.8657209 C197.600645,91.2792348 199.225458,92.0042071 201.393088,92.0042071 C203.200055,92.0042071 204.577138,91.7965517 206.019796,91.3411671 C206.019796,91.3411671 206.365888,91.1918009 206.529827,91.6435424 C206.91235,92.7073209 207.19651,93.468724 207.604535,94.6381516 C207.721113,94.9696716 207.436953,95.1117516 207.334947,95.1518255 C206.766627,95.3740532 205.425975,95.7347178 204.413199,95.887727 C203.465999,96.0334501 202.358504,96.1099547 201.127144,96.1099547 C199.28739,96.1099547 197.648005,95.7966501 196.245421,95.1700409 C194.846479,94.5470747 193.658836,93.6873086 192.718922,92.616244 C191.779009,91.5451794 191.064966,90.2628163 190.587723,88.8128717 C190.114123,87.3665702 189.873679,85.7781887 189.873679,84.0987303 C189.873679,80.4665826 190.853667,77.5302627 192.788141,75.3808473 C194.726258,73.2241458 197.637076,72.1275797 201.433162,72.1275797 C203.677298,72.1275797 205.979722,72.5829643 207.633679,73.2350751 C207.633679,73.2350751 207.950627,73.3880843 207.81219,73.756035 L206.737482,76.7251427 L206.737482,76.7251427 Z" fill="#FFFFFF" transform="translate(198.860433, 84.118767) scale(1, -1) translate(-198.860433, -84.118767) "></path>
+		<path d="M214.399204,86.5520198 C214.606859,87.9618906 214.996668,89.1349613 215.597776,90.0493736 C216.504902,91.4373859 217.889271,92.198789 219.834675,92.198789 C221.780078,92.198789 223.066084,91.4337428 223.987782,90.0493736 C224.599819,89.1349613 224.865764,87.9108875 224.971413,86.5520198 L214.399204,86.5520198 L214.399204,86.5520198 Z M229.142736,89.6522783 C228.771142,91.0548629 227.849444,92.4720198 227.244693,93.1204874 C226.290207,94.1478351 225.357579,94.8655213 224.432238,95.2662597 C223.222736,95.7835766 221.772791,96.1260258 220.18441,96.1260258 C218.333727,96.1260258 216.654268,95.8163643 215.291758,95.1751828 C213.925604,94.5340013 212.778035,93.6596628 211.878195,92.5703828 C210.978355,91.4847459 210.300742,90.1914536 209.870859,88.7232937 C209.437333,87.2624198 209.218749,85.6703952 209.218749,83.9909368 C209.218749,82.2823338 209.444619,80.6903092 209.892718,79.25858 C210.344459,77.8159215 211.065789,76.5444877 212.042133,75.4916385 C213.014835,74.4315031 214.268053,73.6008816 215.769001,73.0216324 C217.259019,72.4460262 219.069628,72.1472939 221.149825,72.150937 C225.430441,72.1655093 227.685505,73.1199955 228.61449,73.6336693 C228.778428,73.7247462 228.935081,73.8850416 228.738354,74.3440693 L227.769296,77.0581615 C227.623573,77.4625431 227.211905,77.3131769 227.211905,77.3131769 C226.15177,76.9197246 224.643536,76.2129677 221.127967,76.2202539 C218.829185,76.2238969 217.124225,76.9015092 216.056804,77.9616446 C214.960238,79.0472815 214.424705,80.6429492 214.329985,82.8943707 L229.153665,82.8797984 C229.153665,82.8797984 229.543474,82.8870845 229.583548,83.2659645 C229.598121,83.4262599 230.093579,86.3115768 229.142736,89.6522783 L229.142736,89.6522783 Z" fill="#FFFFFF" transform="translate(219.472103, 84.138465) scale(1, -1) translate(-219.472103, -84.138465) "></path>
+		<path d="M95.6829901,86.5520198 C95.8942885,87.9618906 96.2804547,89.1349613 96.8815624,90.0493736 C97.7886885,91.4373859 99.1730577,92.198789 101.118461,92.198789 C103.063864,92.198789 104.34987,91.4337428 105.275211,90.0493736 C105.883605,89.1349613 106.14955,87.9108875 106.255199,86.5520198 L95.6829901,86.5520198 L95.6829901,86.5520198 Z M110.422879,89.6522783 C110.051285,91.0548629 109.13323,92.4720198 108.528479,93.1204874 C107.573993,94.1478351 106.641365,94.8655213 105.716024,95.2662597 C104.506522,95.7835766 103.056578,96.1260258 101.468196,96.1260258 C99.6211562,96.1260258 97.9380547,95.8163643 96.5755439,95.1751828 C95.2093901,94.5340013 94.0618209,93.6596628 93.1619809,92.5703828 C92.2621409,91.4847459 91.5845286,90.1914536 91.1546455,88.7232937 C90.7247625,87.2624198 90.5025348,85.6703952 90.5025348,83.9909368 C90.5025348,82.2823338 90.7284055,80.6903092 91.176504,79.25858 C91.6282455,77.8159215 92.3495747,76.5444877 93.3259193,75.4916385 C94.2986209,74.4315031 95.5518393,73.6008816 97.052787,73.0216324 C98.5428054,72.4460262 100.353415,72.1472939 102.433612,72.150937 C106.714227,72.1655093 108.969291,73.1199955 109.898276,73.6336693 C110.062214,73.7247462 110.218867,73.8850416 110.022141,74.3440693 L109.056725,77.0581615 C108.907359,77.4625431 108.495691,77.3131769 108.495691,77.3131769 C107.435556,76.9197246 105.930965,76.2129677 102.40811,76.2202539 C100.112972,76.2238969 98.4080116,76.9015092 97.3405901,77.9616446 C96.2440239,79.0472815 95.7084916,80.6429492 95.6137716,82.8943707 L110.437451,82.8797984 C110.437451,82.8797984 110.827261,82.8870845 110.867334,83.2659645 C110.881907,83.4262599 111.377365,86.3115768 110.422879,89.6522783 L110.422879,89.6522783 Z" fill="#FFFFFF" transform="translate(100.755643, 84.138465) scale(1, -1) translate(-100.755643, -84.138465) "></path>
+		<path d="M63.6417638,76.8187739 C63.0625146,77.2814447 62.9823669,77.3980231 62.7856408,77.6967554 C62.4941946,78.15214 62.3448285,78.8006077 62.3448285,79.6239431 C62.3448285,80.9281646 62.7747115,81.8644354 63.6672654,82.4946877 C63.6563361,82.4910446 64.9423423,83.6058261 67.9660961,83.5657523 C70.0900099,83.5366076 71.9880529,83.223303 71.9880529,83.223303 L71.9880529,76.4836108 L71.991696,76.4836108 C71.991696,76.4836108 70.1082253,76.0792293 67.9879545,75.9517216 C64.9714869,75.7695678 63.6308346,76.822417 63.6417638,76.8187739 M69.5399053,87.2343307 C68.9387976,87.2780476 68.1591792,87.3035491 67.2265515,87.3035491 C65.9551176,87.3035491 64.7274007,87.1432537 63.5761885,86.8335922 C62.41769,86.5239307 61.37577,86.0394014 60.4795731,85.3982199 C59.5797331,84.7533953 58.8547608,83.9300599 58.3301578,82.9537153 C57.8055547,81.9773707 57.5396101,80.8261584 57.5396101,79.5365092 C57.5396101,78.2250016 57.7654809,77.0847185 58.2172224,76.1520908 C58.6689639,75.2158201 59.3210747,74.4362016 60.1516962,73.8350939 C60.9750316,73.2339863 61.99145,72.793174 63.1718069,72.5272294 C64.3339484,72.2612847 65.6527423,72.1264909 67.0954007,72.1264909 C68.6145638,72.1264909 70.1300837,72.2503555 71.5982437,72.5017278 C73.0518314,72.749457 74.836939,73.1101217 75.3323975,73.223057 C75.8242129,73.3396355 76.3706744,73.4890016 76.3706744,73.4890016 C76.7386252,73.5800786 76.7094806,73.9735309 76.7094806,73.9735309 L76.7021944,87.5294199 C76.7021944,90.5021706 75.9080036,92.7062321 74.3451237,94.0723859 C72.7895298,95.4348967 70.4980345,96.1234382 67.536213,96.1234382 C66.4250746,96.1234382 64.6363238,95.970429 63.5652592,95.7554874 C63.5652592,95.7554874 60.3265639,95.1288782 58.9931978,94.0869582 C58.9931978,94.0869582 58.7017516,93.9048044 58.862047,93.4967798 L59.9112531,90.6770383 C60.0424039,90.3127306 60.3957824,90.4365952 60.3957824,90.4365952 C60.3957824,90.4365952 60.5087177,90.4803121 60.6398685,90.5568168 C63.4923977,92.1087675 67.0990438,92.0614075 67.0990438,92.0614075 C68.7019976,92.0614075 69.9333576,91.7408167 70.7639791,91.1032783 C71.5727422,90.4839552 71.9844099,89.5476845 71.9844099,87.5731368 L71.9844099,86.9465276 C70.709333,87.1286814 69.5399053,87.2343307 69.5399053,87.2343307" fill="#FFFFFF" transform="translate(67.124818, 84.124965) scale(1, -1) translate(-67.124818, -84.124965) "></path>
+		<path d="M189.099133,94.6589745 C189.212069,94.9941376 188.975269,95.1544329 188.876906,95.1908637 C188.625533,95.2892268 187.365029,95.5551714 186.392327,95.6171037 C184.530715,95.7300391 183.496081,95.4167345 182.57074,95.0014237 C181.652684,94.586113 180.632623,93.9157868 180.064303,93.1543837 L180.064303,94.9577068 C180.064303,95.2090791 179.885792,95.4094483 179.638063,95.4094483 L175.838334,95.4094483 C175.590604,95.4094483 175.412094,95.2090791 175.412094,94.9577068 L175.412094,72.8478733 C175.412094,72.6001441 175.616106,72.3961318 175.863835,72.3961318 L179.758284,72.3961318 C180.006014,72.3961318 180.206383,72.6001441 180.206383,72.8478733 L180.206383,83.8936824 C180.206383,85.3764146 180.370321,86.8555038 180.698198,87.7844884 C181.018789,88.7025438 181.455958,89.4384453 181.995134,89.9666915 C182.537952,90.4912946 183.153632,90.8592453 183.827601,91.0669007 C184.516143,91.2781992 185.277546,91.3474176 185.816721,91.3474176 C186.592697,91.3474176 187.445177,91.1470484 187.445177,91.1470484 C187.729337,91.1142607 187.889632,91.2891284 187.984352,91.5477868 C188.239367,92.2253991 188.960697,94.254593 189.099133,94.6589745" fill="#FFFFFF" transform="translate(182.270544, 84.018248) scale(1, -1) translate(-182.270544, -84.018248) "></path>
+		<path d="M152.543767,105.761574 C152.070167,105.907297 151.640284,106.00566 151.07925,106.111309 C150.51093,106.213316 149.833318,106.264319 149.064629,106.264319 C146.383324,106.264319 144.270339,105.506559 142.787607,104.012897 C141.312161,102.526522 140.310315,100.264171 139.80757,97.2877773 L139.625416,96.2859312 L136.259213,96.2859312 C136.259213,96.2859312 135.851189,96.3005035 135.763755,95.8560481 L135.21365,92.770362 C135.173577,92.4789159 135.301084,92.2931189 135.694537,92.2931189 L138.969663,92.2931189 L135.647177,73.7425715 C135.388518,72.24891 135.089786,71.0211931 134.758266,70.0885655 C134.434032,69.1705101 134.117084,68.4819686 133.723632,67.9792239 C133.344752,67.4983378 132.98773,67.1413163 132.368407,66.9336609 C131.858377,66.7624363 131.268198,66.6822886 130.623374,66.6822886 C130.266352,66.6822886 129.789109,66.7405778 129.43573,66.8134393 C129.085995,66.8826578 128.900198,66.9591624 128.634254,67.0720978 C128.634254,67.0720978 128.251731,67.2178209 128.098721,66.8352978 C127.9785,66.5183501 127.104161,64.1175625 126.998512,63.8224732 C126.896506,63.527384 127.042229,63.2978702 127.228026,63.2286517 C127.665195,63.0756425 127.989429,62.9736363 128.583251,62.8315563 C129.406586,62.6384733 130.102414,62.627544 130.754524,62.627544 C132.117035,62.627544 133.362967,62.8206271 134.393958,63.1922209 C135.428592,63.5674579 136.332075,64.2195686 137.133552,65.1011932 C137.996961,66.0556794 138.53978,67.0538824 139.057096,68.4200362 C139.57077,69.7679747 140.011583,71.44379 140.361318,73.3964792 L143.702019,92.2931189 L148.583742,92.2931189 C148.583742,92.2931189 148.99541,92.2785466 149.079201,92.7266451 L149.632949,95.8086881 C149.669379,96.1037773 149.545515,96.2859312 149.148419,96.2859312 L144.408776,96.2859312 C144.434278,96.3915804 144.649219,98.0601096 145.192038,99.6302757 C145.425195,100.296959 145.862364,100.839777 146.230315,101.211371 C146.594623,101.575679 147.013576,101.834337 147.472604,101.983703 C147.942561,102.136713 148.478093,102.209574 149.064629,102.209574 C149.509084,102.209574 149.949896,102.158571 150.281416,102.089353 C150.740444,101.99099 150.918955,101.939986 151.039176,101.903556 C151.523706,101.757833 151.589281,101.899913 151.684001,102.13307 L152.816998,105.244257 C152.933576,105.57942 152.645773,105.7215 152.543767,105.761574" fill="#FFFFFF" transform="translate(139.904621, 84.445931) scale(1, -1) translate(-139.904621, -84.445931) "></path>
+		<path d="M86.3217408,63.553237 C86.3217408,63.3055078 86.14323,63.1051385 85.8955008,63.1051385 L81.9646209,63.1051385 C81.7168916,63.1051385 81.542024,63.3055078 81.542024,63.553237 L81.542024,95.1897165 C81.542024,95.4374457 81.7168916,95.6378149 81.9646209,95.6378149 L85.8955008,95.6378149 C86.14323,95.6378149 86.3217408,95.4374457 86.3217408,95.1897165 L86.3217408,63.553237 L86.3217408,63.553237 Z" fill="#FFFFFF" transform="translate(83.931882, 79.371477) scale(1, -1) translate(-83.931882, -79.371477) "></path>
+	</g>
+</svg>
                                             </div>
 
-                                            <div class="pf-popup-embed">
-                                                <img src="assets/images/uploads/portfolio/prj-03.jpg" alt="">
-                                            </div>
-
-                                            <div class="pf-popup-embed">
-                                                <img src="assets/images/uploads/portfolio/prj-03.jpg" alt="">
-                                            </div>
                                         </div>
                                     </div><!-- .pf-popup-col1 -->
 
                                     <div class="pf-popup-col2">
                                         <div class="pf-popup-info">
-                                            <h2 class="pf-popup-title text-upper">Rs Project</h2>
+                                            <h2 class="pf-popup-title text-upper">Salesforce</h2>
 
-                                            <div class="text-muted"><strong>design / development</strong></div>
+                                            <div class="text-muted"><strong>automation</strong></div>
 
                                             <dl class="dl-horizontal">
                                                 <dt>Date:</dt>
-                                                <dd>11 Jan 2012</dd>
+                                                <dd>11 Jan 2018</dd>
 
-                                                <dt>Site link:</dt>
-                                                <dd><a href="www.sitedomen.html">www.sitedomen.com</a></dd>
-
-                                                <dt>Client:</dt>
-                                                <dd>11 Jan 2012</dd>
                                             </dl>
 
-                                            <p>About 64% of all on-line teens say that do things online that they wouldn’t want their
-                                                parents to know about. 11% of all adult internet users visit dating websites and spend their
-                                                time in chatrooms.</p>
+                                            <p>I undertook a project to overhaul the usage of Salesforce CRM developing the underutilised platform to streamline workflows, create productivity features and generate useful data for further optimisation and analysis. Alongside this technical development of Salesforce I worked with the Chief Commercial Officer to adapt the management of the sales team to more effectively handle leads, this work initiated the introduction of an internal sales team to pre-qualify leads before they are sent to regional managers.<br>
+This extensive piece of work led to me gaining detailed knowledge of the Salesforce platform which later on in user group meetings was commended to have picked it up so quickly. 
+</p>
                                         </div><!-- .pf-popup-info -->
 
-                                        <div class="pf-popup-rel">
-                                            <h2 class="text-upper">More Projects</h2>
-
-                                            <div class="pf-rel-list cr-carousel" data-init="none">
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover" href="#">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover" href="#">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover" href="#">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover" href="#">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover" href="#">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-                                            </div><!-- .pf-rel-projects -->
-                                        </div><!-- .pf-popup-rel -->
+                                      
                                     </div><!-- .pf-popup-col2 -->
                                 </div><!-- .pf-popup -->
                             </div><!-- .pf-grid-item -->
@@ -615,18 +624,18 @@ $('.demo-prompt').click(function(){
                             <div class="pf-grid-item design">
                                 <a class="pf-project" href="#pf-popup-4">
                                     <figure class="pf-figure">
-                                        <img src="assets/images/uploads/portfolio/prj-04.jpg" alt="">
+                                        <div class="pf-popup-embed" style="width: 300px; height: 300px; margin:12px;">
+                                                <style>.bi-logo { width: 260px; height: 260px; background: #F3F3F3; border-radius: 50%; position: absolute; left: 50%; top: 50%; margin-left: -150px; margin-top: -150px; } .bi-logo:hover .bars { height: 50%; } .bi-logo:hover .bars:nth-child(2) { height: 25%; } .bi-logo:hover .bars:nth-child(3) { height: 40%; } .bi-logo .bars { box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); position: absolute; height: 25%; width: 15%; background: #f0dca6; border-top-left-radius: 50px; border-top-right-radius: 50px; transition: all .1s ease-in-out; bottom: 25%; left: 25%; } .bi-logo .bars:nth-child(2) { height: 40%; width: 15%; background: #f0a6df; bottom: 25%; left: 42%; } .bi-logo .bars:nth-child(3) { height: 55%; width: 15%; background: #a6f0b7; bottom: 25%; left: 59%; } .bi-logo:before { position: absolute; content: ''; border: solid 6px #83def3; width: 282px; height: 283px; border-radius: 50%; margin: 3%; } </style><div class="bi-logo waves-effect"> <div class="bars"></div> <div class="bars"></div> <div class="bars"></div> </div><script></script>
+                                            </div>
                                     </figure>
 
                                     <div class="pf-caption text-center">
                                         <div class="valign-table">
                                             <div class="valign-cell">
-                                                <h2 class="pf-title text-upper">stunger rise</h2>
-
+                                                <h2 class="pf-title text-upper">Business Intelligence</h2>
                                                 <div class="pf-text">
-                                                    <p>Accessories Here you can find the best computer monitor, printer, scanner, speaker, projector. hardware and more</p>
+                                                    <p>Data analysis project, creating dashboards for the reporting of business metrics.</p>
                                                 </div>
-
                                                 <button class="pf-btn btn btn-primary">View More</button>
                                             </div>
                                         </div>
@@ -634,96 +643,35 @@ $('.demo-prompt').click(function(){
                                 </a><!-- .pf-project -->
 
                                 <div id="pf-popup-4" class="pf-popup clearfix">
-                                    <div class="pf-popup-col1">
-                                        <div class="pf-popup-media cr-slider" data-init="none">
-                                            <div class="pf-popup-embed">
-                                                <img src="assets/images/uploads/portfolio/prj-04.jpg" alt="">
+                                    <div class="pf-popup-col1-2">
+                                        <div class="pf-popup-media cr-slider" style="background: #FFFFFF" data-init="none">
+                                            <div class="pf-popup-embed" style="width: 300px; height: 300px;">
+                                                <style>.bi-logo { width: 300px; height: 300px; background: #F3F3F3; border-radius: 50%; position: absolute; left: 50%; top: 50%; margin-left: -150px; margin-top: -150px; } .bi-logo:hover .bars { height: 50%; } .bi-logo:hover .bars:nth-child(2) { height: 25%; } .bi-logo:hover .bars:nth-child(3) { height: 40%; } .bi-logo .bars { box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); position: absolute; height: 25%; width: 15%; background: #f0dca6; border-top-left-radius: 50px; border-top-right-radius: 50px; transition: all .1s ease-in-out; bottom: 25%; left: 25%; } .bi-logo .bars:nth-child(2) { height: 40%; width: 15%; background: #f0a6df; bottom: 25%; left: 42%; } .bi-logo .bars:nth-child(3) { height: 55%; width: 15%; background: #a6f0b7; bottom: 25%; left: 59%; } .bi-logo:before { position: absolute; content: ''; border: solid 6px #83def3; width: 282px; height: 283px; border-radius: 50%; margin: 3%; } </style><div class="bi-logo waves-effect"> <div class="bars"></div> <div class="bars"></div> <div class="bars"></div> </div><script></script>
                                             </div>
 
-                                            <div class="pf-popup-embed">
-                                                <img src="assets/images/uploads/portfolio/prj-04.jpg" alt="">
-                                            </div>
-
-                                            <div class="pf-popup-embed">
-                                                <img src="assets/images/uploads/portfolio/prj-04.jpg" alt="">
-                                            </div>
                                         </div>
                                     </div><!-- .pf-popup-col1 -->
 
-                                    <div class="pf-popup-col2">
+                                    <div class="pf-popup-col2-2">
                                         <div class="pf-popup-info">
-                                            <h2 class="pf-popup-title text-upper">Rs Project</h2>
+                                            <h2 class="pf-popup-title text-upper">Business Intelligence</h2>
 
-                                            <div class="text-muted"><strong>design / development</strong></div>
+                                            <div class="text-muted"><strong>data analysis</strong></div>
 
                                             <dl class="dl-horizontal">
                                                 <dt>Date:</dt>
-                                                <dd>11 Jan 2012</dd>
-
-                                                <dt>Site link:</dt>
-                                                <dd><a href="www.sitedomen.html">www.sitedomen.com</a></dd>
-
-                                                <dt>Client:</dt>
-                                                <dd>11 Jan 2012</dd>
+                                                <dd>11 April 2018</dd>
                                             </dl>
 
-                                            <p>About 64% of all on-line teens say that do things online that they wouldn’t want their
-                                                parents to know about. 11% of all adult internet users visit dating websites and spend their
-                                                time in chatrooms.</p>
+                                            <p>I took on a project to develop and improve the methods and mechanisms for sales and marketing reporting in the company. Approaching the project from an objective perspective it was clear the existing system was overly burdensome to generate reports and once the reports were generated they didn’t provide enough granularity to be able to identify potential problems.
+I chose to eschew the large messy excel based reporting system and utilise a Business Intelligence software package (Microsoft PowerBI), by doing this I cut out the need to manual create monthly reports and have the model dynamically update in real time. In addition to this I reshaped the data schema to enable reporting to finer granularity on specific product level over product category level. This is a process of continuous improvement that has the scope to add even more value to the business when applied to other aspects of our work.
+</p>
                                         </div><!-- .pf-popup-info -->
-
-                                        <div class="pf-popup-rel">
-                                            <h2 class="text-upper">More Projects</h2>
-
-                                            <div class="pf-rel-list cr-carousel" data-init="none">
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover" href="#">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover" href="#">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover" href="#">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover" href="#">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-
-                                                <div class="pf-rel-prj">
-                                                    <img src="assets/images/uploads/portfolio/prj-rel-01.jpg" alt="">
-                                                    <a class="pf-rel-cover" href="#">
-                                                        <button class="btn btn-primary btn-sm">View</button>
-                                                    </a>
-                                                </div>
-                                            </div><!-- .pf-rel-projects -->
-                                        </div><!-- .pf-popup-rel -->
                                     </div><!-- .pf-popup-col2 -->
                                 </div><!-- .pf-popup -->
                             </div><!-- .pf-grid-item -->
 
-                            <div class="pf-grid-item photography">
+                           <!-- <div class="pf-grid-item photography">
                                 <a class="pf-project" href="#pf-popup-5">
                                     <figure class="pf-figure">
                                         <img src="assets/images/uploads/portfolio/prj-05.jpg" alt="">
@@ -742,7 +690,7 @@ $('.demo-prompt').click(function(){
                                             </div>
                                         </div>
                                     </div>
-                                </a><!-- .pf-project -->
+                                </a>
 
                                 <div id="pf-popup-5" class="pf-popup clearfix">
                                     <div class="pf-popup-col1">
@@ -759,7 +707,7 @@ $('.demo-prompt').click(function(){
                                                 <img src="assets/images/uploads/portfolio/prj-05.jpg" alt="">
                                             </div>
                                         </div>
-                                    </div><!-- .pf-popup-col1 -->
+                                    </div><
 
                                     <div class="pf-popup-col2">
                                         <div class="pf-popup-info">
@@ -781,7 +729,7 @@ $('.demo-prompt').click(function(){
                                             <p>About 64% of all on-line teens say that do things online that they wouldn’t want their
                                                 parents to know about. 11% of all adult internet users visit dating websites and spend their
                                                 time in chatrooms.</p>
-                                        </div><!-- .pf-popup-info -->
+                                        </div>
 
                                         <div class="pf-popup-rel">
                                             <h2 class="text-upper">More Projects</h2>
@@ -828,13 +776,13 @@ $('.demo-prompt').click(function(){
                                                         <button class="btn btn-primary btn-sm">View</button>
                                                     </a>
                                                 </div>
-                                            </div><!-- .pf-rel-projects -->
-                                        </div><!-- .pf-popup-rel -->
-                                    </div><!-- .pf-popup-col2 -->
-                                </div><!-- .pf-popup -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div><!-- .pf-grid-item -->
 
-                            <div class="pf-grid-item design">
+                            <!--<div class="pf-grid-item design">
                                 <a class="pf-project" href="#pf-popup-6">
                                     <figure class="pf-figure">
                                         <img src="assets/images/uploads/portfolio/prj-06.jpg" alt="">
@@ -853,7 +801,7 @@ $('.demo-prompt').click(function(){
                                             </div>
                                         </div>
                                     </div>
-                                </a><!-- .pf-project -->
+                                </a>
 
                                 <div id="pf-popup-6" class="pf-popup clearfix">
                                     <div class="pf-popup-col1">
@@ -870,7 +818,7 @@ $('.demo-prompt').click(function(){
                                                 <img src="assets/images/uploads/portfolio/prj-06.jpg" alt="">
                                             </div>
                                         </div>
-                                    </div><!-- .pf-popup-col1 -->
+                                    </div>
 
                                     <div class="pf-popup-col2">
                                         <div class="pf-popup-info">
@@ -892,7 +840,7 @@ $('.demo-prompt').click(function(){
                                             <p>About 64% of all on-line teens say that do things online that they wouldn’t want their
                                                 parents to know about. 11% of all adult internet users visit dating websites and spend their
                                                 time in chatrooms.</p>
-                                        </div><!-- .pf-popup-info -->
+                                        </div>
 
                                         <div class="pf-popup-rel">
                                             <h2 class="text-upper">More Projects</h2>
@@ -939,13 +887,13 @@ $('.demo-prompt').click(function(){
                                                         <button class="btn btn-primary btn-sm">View</button>
                                                     </a>
                                                 </div>
-                                            </div><!-- .pf-rel-projects -->
-                                        </div><!-- .pf-popup-rel -->
-                                    </div><!-- .pf-popup-col2 -->
-                                </div><!-- .pf-popup -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div><!-- .pf-grid-item -->
 
-                            <div class="pf-grid-item photography">
+                           <!-- <div class="pf-grid-item photography">
                                 <a class="pf-project" href="#pf-popup-7">
                                     <figure class="pf-figure">
                                         <img src="assets/images/uploads/portfolio/prj-01.jpg" alt="">
@@ -964,7 +912,7 @@ $('.demo-prompt').click(function(){
                                             </div>
                                         </div>
                                     </div>
-                                </a><!-- .pf-project -->
+                                </a>
 
                                 <div id="pf-popup-7" class="pf-popup clearfix">
                                     <div class="pf-popup-col1">
@@ -973,7 +921,7 @@ $('.demo-prompt').click(function(){
                                                 <img src="assets/images/uploads/portfolio/prj-01.jpg" alt="">
                                             </div>
                                         </div>
-                                    </div><!-- .pf-popup-col1 -->
+                                    </div>
 
                                     <div class="pf-popup-col2">
                                         <div class="pf-popup-info">
@@ -995,7 +943,7 @@ $('.demo-prompt').click(function(){
                                             <p>About 64% of all on-line teens say that do things online that they wouldn’t want their
                                                 parents to know about. 11% of all adult internet users visit dating websites and spend their
                                                 time in chatrooms.</p>
-                                        </div><!-- .pf-popup-info -->
+                                        </div>
 
                                         <div class="pf-popup-rel">
                                             <h2 class="text-upper">More Projects</h2>
@@ -1042,10 +990,10 @@ $('.demo-prompt').click(function(){
                                                         <button class="btn btn-primary btn-sm">View</button>
                                                     </a>
                                                 </div>
-                                            </div><!-- .pf-rel-projects -->
-                                        </div><!-- .pf-popup-rel -->
-                                    </div><!-- .pf-popup-col2 -->
-                                </div><!-- .pf-popup -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div><!-- .pf-grid-item -->
                         </div><!-- .pf-grid -->
                     </div><!-- .pf-wrap -->
@@ -1057,7 +1005,123 @@ $('.demo-prompt').click(function(){
     <!-- .crt-paper -->
 </div>
 <!-- .crt-paper-layers -->
+<!--adding contact form here-->
+     <!--addcontactform-->
+    <div class="crt-paper-layers" id="contact">
+            <div class="crt-paper clearfix">
+                <div class="crt-paper-cont paper-padd clear-mrg">
 
+                    <div class="padd-box">
+                        
+
+                        <div class="padd-box-xs">
+                            <header class="contact-head">
+                                
+                                <h3 class="title text-upper">feel free to contact me about any opportunities.</h3>
+                            </header>
+                        </div>
+<!--contact form mautic insert-->
+      
+<style type="text/css" scoped>
+    .mauticform_wrapper { max-width: 600px; margin: 10px auto; }
+    .mauticform-innerform {}
+    .mauticform-post-success {}
+    .mauticform-name { font-weight: bold; font-size: 1.5em; margin-bottom: 3px; }
+    .mauticform-description { margin-top: 2px; margin-bottom: 10px; }
+    .mauticform-error { margin-bottom: 10px; color: red; }
+    .mauticform-message { margin-bottom: 10px;color: green; }
+    .mauticform-row { display: block; margin-bottom: 20px; }
+    .mauticform-label { font-size: 1.1em; display: block; font-weight: bold; margin-bottom: 5px; }
+    .mauticform-row.mauticform-required .mauticform-label:after { color: #e32; content: " *"; display: inline; }
+    .mauticform-helpmessage { display: block; font-size: 0.9em; margin-bottom: 3px; }
+    .mauticform-errormsg { display: block; color: red; margin-top: 2px; }
+    .mauticform-selectbox, .mauticform-input, .mauticform-textarea { width: 100%; padding: 0.5em 0.5em; border: 1px solid #CCC; background: #fff; box-shadow: 0px 0px 0px #fff inset; border-radius: 4px; box-sizing: border-box; }
+    .mauticform-checkboxgrp-row {}
+    .mauticform-checkboxgrp-label { font-weight: normal; }
+    .mauticform-checkboxgrp-checkbox {}
+    .mauticform-radiogrp-row {}
+    .mauticform-radiogrp-label { font-weight: normal; }
+    .mauticform-radiogrp-radio {}
+    .mauticform-button-wrapper .mauticform-button.btn-default, .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default { color: #5d6c7c;background-color: #ffffff;border-color: #dddddd;}
+    .mauticform-button-wrapper .mauticform-button, .mauticform-pagebreak-wrapper .mauticform-pagebreak { display: inline-block;margin-bottom: 0;font-weight: 600;text-align: center;vertical-align: middle;cursor: pointer;background-image: none;border: 1px solid transparent;white-space: nowrap;padding: 6px 12px;font-size: 13px;line-height: 1.3856;border-radius: 3px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+    .mauticform-button-wrapper .mauticform-button.btn-default[disabled], .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default[disabled] { background-color: #ffffff; border-color: #dddddd; opacity: 0.75; cursor: not-allowed; }
+    .mauticform-pagebreak-wrapper .mauticform-button-wrapper {  display: inline; }
+</style>
+<div id="mauticform_wrapper_githubioform" class="mauticform_wrapper">
+    <form autocomplete="false" role="form" method="post" action="https://benhadman.mautic.net/form/submit?formId=1" id="mauticform_githubioform"  data-mautic-form="githubioform" enctype="multipart/form-data">
+        <div class="mauticform-error" id="mauticform_githubioform_error"></div>
+        <div class="mauticform-message" id="mauticform_githubioform_message"></div>
+        <div class="mauticform-innerform">
+
+            
+          <div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
+
+            <div id="mauticform_githubioform_first_name"  data-validate="first_name" data-validation-type="text" class="mauticform-row mauticform-text mauticform-field-1 mauticform-required">
+                <label id="mauticform_label_githubioform_first_name" for="mauticform_input_githubioform_first_name" class="mauticform-label">First Name</label>
+                <input id="mauticform_input_githubioform_first_name" name="mauticform[first_name]" value="" class="mauticform-input" type="text" />
+                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+            </div>
+
+            <div id="mauticform_githubioform_last_name"  data-validate="last_name" data-validation-type="text" class="mauticform-row mauticform-text mauticform-field-2 mauticform-required">
+                <label id="mauticform_label_githubioform_last_name" for="mauticform_input_githubioform_last_name" class="mauticform-label">Last Name</label>
+                <input id="mauticform_input_githubioform_last_name" name="mauticform[last_name]" value="" class="mauticform-input" type="text" />
+                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+            </div>
+
+            <div id="mauticform_githubioform_email"  data-validate="email" data-validation-type="email" class="mauticform-row mauticform-email mauticform-field-3 mauticform-required">
+                <label id="mauticform_label_githubioform_email" for="mauticform_input_githubioform_email" class="mauticform-label">Email</label>
+                <input id="mauticform_input_githubioform_email" name="mauticform[email]" value="" class="mauticform-input" type="email" />
+                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+            </div>
+
+            <div id="mauticform_githubioform_recruiter"  class="mauticform-row mauticform-checkboxgrp mauticform-field-4">
+                <label  class="mauticform-label" for="mauticform_checkboxgrp_checkbox_recruiter_Yes1">Recruiter</label>
+                <span class="mauticform-helpmessage">Are you a recruiter?</span>
+                <div class="mauticform-checkboxgrp-row">
+                    <label id="mauticform_checkboxgrp_label_recruiter_Yes0" for="mauticform_checkboxgrp_checkbox_recruiter_Yes0"  class="mauticform-checkboxgrp-label">
+                        <input  class="mauticform-checkboxgrp-checkbox" name="mauticform[recruiter][]" id="mauticform_checkboxgrp_checkbox_recruiter_Yes0" type="checkbox" value="Yes" />
+                        Yes
+                    </label>
+                </div>
+                <div class="mauticform-checkboxgrp-row">
+                    <label id="mauticform_checkboxgrp_label_recruiter_No1" for="mauticform_checkboxgrp_checkbox_recruiter_No1"  class="mauticform-checkboxgrp-label">
+                        <input  class="mauticform-checkboxgrp-checkbox" name="mauticform[recruiter][]" id="mauticform_checkboxgrp_checkbox_recruiter_No1" type="checkbox" value="No" />
+                        No
+                    </label>
+                </div>
+                <span class="mauticform-errormsg" style="display: none;"></span>
+            </div>
+
+            <div id="mauticform_githubioform_comments__questions"  data-validate="comments__questions" data-validation-type="text" class="mauticform-row mauticform-text mauticform-field-5 mauticform-required">
+                <label id="mauticform_label_githubioform_comments__questions" for="mauticform_input_githubioform_comments__questions" class="mauticform-label">Comments / Questions</label>
+                <input id="mauticform_input_githubioform_comments__questions" name="mauticform[comments__questions]" value="" class="mauticform-input" type="text" />
+                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+            </div>
+
+            <div id="mauticform_githubioform_submit"  class="mauticform-row mauticform-button-wrapper mauticform-field-6">
+                <button type="submit" name="mauticform[submit]" id="mauticform_input_githubioform_submit" name="mauticform[submit]" value="" class="mauticform-button btn btn-default" value="1">Submit</button>
+            </div>
+            </div>
+        </div>
+
+        <input type="hidden" name="mauticform[formId]" id="mauticform_githubioform_id" value="1"/>
+        <input type="hidden" name="mauticform[return]" id="mauticform_githubioform_return" value=""/>
+        <input type="hidden" name="mauticform[formName]" id="mauticform_githubioform_name" value="githubioform"/>
+
+        </form>
+</div>
+  
+ <!--contact form mautic end-->
+                      </div>
+                    <!-- .padd-box -->
+
+                   
+                </div>
+                <!-- .crt-paper-cont -->
+            </div>
+            <!-- .crt-paper -->
+        </div>
+    <!--contactendeth-->
         </div>
     
 <!-- .crt-container-sm -->
@@ -1074,7 +1138,7 @@ $('.demo-prompt').click(function(){
 
             <ul class="clear-list">
                 <li><a href="index.html">home</a></li>
-                <li><a href="#experience">experience</a>
+                <li><a href="index.html#experience">experience</a>
                <!-- <li class="has-sub-menu"><a href="#">pages</a>
                     <ul class="sub-menu">
                         <li><a href="typography.html">typography</a></li>
@@ -1132,7 +1196,6 @@ $('.demo-prompt').click(function(){
                     </button>
                 </form>
             </section>
-
            <!-- <section class="widget widget_posts_entries">
                 <h2 class="widget-title">popular posts</h2>
                 <ul>
@@ -1236,18 +1299,15 @@ $('.demo-prompt').click(function(){
                 </ul>
             </section>-->
         </aside>
-
     </div>
     <!-- #crt-sidebar-inner -->
-</div>
-    
-        
+</div>   
     <!--contact form end-->
 <!-- #crt-sidebar -->
 <footer id="crt-footer" class="crt-container-lg">
     <div class="crt-container">
         <div class="crt-container-sm clear-mrg text-center">
-            <p>Ben Hadman CV @ All Rights Reserved 2017</p>
+            <p>Ben Hadman CV @ All Rights Reserved 2018</p>
         </div>
     </div>
     <!-- .crt-container -->
@@ -1285,6 +1345,10 @@ $('.demo-prompt').click(function(){
     <!--animated headlines--><!--
     <script src="assets/js/jquery-2.1.1.js"></script>
 <script src="assets/js/main.js"></script> <!-- Resource jQuery -->
-    
+      <script  src="assets/js/index.js"></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+    <link rel="stylesheet" href="assets/css/salesforce.css" />
+    <link rel="stylesheet" href="assets/scss/materialwaves.scss" />
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js'></script>
 </body>
 </html>
