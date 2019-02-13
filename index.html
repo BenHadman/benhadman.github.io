@@ -320,18 +320,6 @@ $('#example4').typeIt({
             </div>
         </div>
     </div>
-    <!--animated Headlines try-->  <!--
-    <section class="cd-intro">
-		<h1 class="cd-headline letters type">
-			<span>My favourite food is</span> 
-			<span class="cd-words-wrapper waiting">
-				<b class="is-visible">pizza</b>
-				<b>sushi</b>
-				<b>steak</b>
-			</span>
-		</h1>
-	</section> -->
-    <!--animated Headines try end-->
     <!-- .row -->
 
     <div class="row">
@@ -373,13 +361,8 @@ $('#example4').typeIt({
                 <dt class="text-upper">Full Name</dt>
                 <dd>Benjamin Hadman</dd>
 
-                <dt class="text-upper">D.o.b.</dt>
-                <dd>28th July 1993</dd>
-
                 <dt class="text-upper">address</dt>
-                <dd>Cambridge /<br>
-                    West Hampstead, London
-                </dd>
+                <dd>West Hampstead, London</dd>
 
                 <dt class="text-upper">e-mail</dt>
                 <dd>benhadman"at"gmail.com</dd>
@@ -389,107 +372,6 @@ $('#example4').typeIt({
 
             </dl>
             
-            <!--map trial-->
-            <!-- amCharts javascript sources -->
-		<script type="text/javascript" src="/assets/js/amchart.js"></script>
-		<script type="text/javascript" src="https://www.amcharts.com/lib/3/maps/js/unitedKingdomLow.js"></script>
-
-		<!-- amCharts javascript code -->
-		<script type="text/javascript">
-			AmCharts.makeChart("map",{
-					"type": "map",
-					"pathToImages": "http://www.amcharts.com/lib/3/images/",
-					"addClassNames": true,
-					"fontSize": 15,
-					"color": "#000000",
-					"projection": "mercator",
-					"backgroundAlpha": 1,
-					"backgroundColor": "rgba(255,255,255,1)",
-					"dataProvider": {
-						"map": "unitedKingdomLow",
-						"getAreasFromMap": true,
-						"images": [
-							{
-								"top": 40,
-								"left": 60,
-								"width": 80,
-								"height": 40,
-								
-							},
-							
-							{
-								"selectable": true,
-								"title": "Cambridge",
-								"longitude": 0.120411,
-								"latitude": 52.215308,
-								"svgPath": "M3.5,13.277C3.5,6.22,9.22,0.5,16.276,0.5C23.333,0.5,29.053,6.22,29.053,13.277C29.053,14.54,28.867,15.759,28.526,16.914C26.707,24.271,16.219,32.5,16.219,32.5C16.219,32.5,4.37,23.209,3.673,15.542C3.673,15.542,3.704,15.536,3.704,15.536C3.572,14.804,3.5,14.049,3.5,13.277C3.5,13.277,3.5,13.277,3.5,13.277M16.102,16.123C18.989,16.123,21.329,13.782,21.329,10.895C21.329,8.008,18.989,5.668,16.102,5.668C13.216,5.668,10.876,8.008,10.876,10.895C10.876,13.782,13.216,16.123,16.102,16.123C16.102,16.123,16.102,16.123,16.102,16.123",
-								"color": "rgba(131,222,243,1)",
-								"scale": 1.1
-							},
-							{
-								"selectable": true,
-								"title": "West Hampstead, London",
-								"longitude": -0.191382,
-								"latitude": 51.545626,
-								"svgPath": "M3.5,13.277C3.5,6.22,9.22,0.5,16.276,0.5C23.333,0.5,29.053,6.22,29.053,13.277C29.053,14.54,28.867,15.759,28.526,16.914C26.707,24.271,16.219,32.5,16.219,32.5C16.219,32.5,4.37,23.209,3.673,15.542C3.673,15.542,3.704,15.536,3.704,15.536C3.572,14.804,3.5,14.049,3.5,13.277C3.5,13.277,3.5,13.277,3.5,13.277M16.102,16.123C18.989,16.123,21.329,13.782,21.329,10.895C21.329,8.008,18.989,5.668,16.102,5.668C13.216,5.668,10.876,8.008,10.876,10.895C10.876,13.782,13.216,16.123,16.102,16.123C16.102,16.123,16.102,16.123,16.102,16.123",
-								"color": "rgba(131,222,243,1)",
-								"scale": 1
-							},
-							
-							
-							
-						]
-					},
-					"balloon": {
-						"horizontalPadding": 15,
-						"borderAlpha": 0,
-						"borderThickness": 1,
-						"verticalPadding": 15
-					},
-					"areasSettings": {
-						"color": "rgba(51,209,255,1)",
-						"outlineColor": "rgba(255,255,255,1)",
-						"rollOverOutlineColor": "rgba(255,255,255,1)",
-						"rollOverBrightness": 20,
-						"selectedBrightness": 20,
-						"selectable": true,
-						"unlistedAreasAlpha": 0,
-						"unlistedAreasOutlineAlpha": 0
-					},
-					"imagesSettings": {
-						"alpha": 1,
-						"color": "rgba(51,209,255,1)",
-						"outlineAlpha": 0,
-						"rollOverOutlineAlpha": 0,
-						"outlineColor": "rgba(255,255,255,1)",
-						"rollOverBrightness": 20,
-						"selectedBrightness": 20,
-						"selectable": true
-					},
-					"linesSettings": {
-						"color": "rgba(51,209,255,1)",
-						"selectable": true,
-						"rollOverBrightness": 20,
-						"selectedBrightness": 20
-					},
-					"zoomControl": {
-						"zoomControlEnabled": false,
-						"homeButtonEnabled": false,
-						"panControlEnabled": false,
-						"right": 38,
-						"bottom": 30,
-						"minZoomLevel": 0.25,
-						"gridHeight": 100,
-						"gridAlpha": 0.1,
-						"gridBackgroundAlpha": 0,
-						"gridColor": "#FFFFFF",
-						"draggerAlpha": 1,
-						"buttonCornerRadius": 2
-					}
-				});
-		</script>
-		<div id="map" style="width: 100%; height: 150px;"></div>
-            <!--map trial end-->
         </div>
         <!-- .col-sm-6 -->
 
@@ -497,12 +379,13 @@ $('#example4').typeIt({
             
 
            <ul class="accordion" style="margin-top:0px!important;">
-                <li class="">
+                <li>
                     <h3 class="accordion-header">university education<span class="icon"></span></h3>
                     <div class="accordion-content" style="display: block;"><p class="text-upper">
                     University of Brighton - Pharmaceutical and Chemical Sciences - 2:1</p>
-                        <hr class="dotted brd-primary">
-<div class="progress-line crt-animate" role="progressbar" aria-valuenow="68" aria-valuemin="0"
+                    </div>
+               </li>
+<!--<div class="progress-line crt-animate" role="progressbar" aria-valuenow="68" aria-valuemin="0"
                  aria-valuemax="100">
                 <strong class="progress-title">Business Skills for Science Students</strong>
                 <div class="progress-bar" data-text="68%" data-value="0.68"></div>
@@ -513,8 +396,8 @@ $('#example4').typeIt({
                 <div class="progress-bar" data-text="69%" data-value="0.69"></div>
             </div>
                         <p style="font-size:6pt; line-height:10px; padding-top:12px;"><i>*notable modules with directly transferable skills, applicable to marketing</i></p>
-                    </div>
-                </li>
+                    </div>-->
+                
                 <li class="">
                     <h3 class="accordion-header">school education<span class="icon"></span></h3>
                     <div class="accordion-content" style="display: none;">
@@ -529,16 +412,7 @@ $('#example4').typeIt({
                              <dt class="text-upper">Music</dt>
                 <dd>B</dd>
             </dl>
-                        <p class="text-upper">GCSE</p>
                         
-                        <dl class="dl-horizontal clear-mrg">
-                <dt class="text-upper">Biology</dt>
-                <dd>Benjamin Hadman</dd>
-                <dt class="text-upper">Chemistry</dt>
-                <dd>28th July 1993</dd>
-                        <dt class="text-upper">Geography</dt>
-                <dd>28th July 1993</dd>
-            </dl>
                         
                     </div>
                 </li>
@@ -557,11 +431,133 @@ $('#example4').typeIt({
 <section class="section brd-btm padd-box">
     <div class="row">
         <div class="col-sm-12 clear-mrg">
-           
+           <h2 class="title-lg text-upper">Skills</h2>
 
 <!-- Use .active class if you want to pre open one of toggle items -->
 <ul class="togglebox">
+    
     <li class="active">
+        <h3 class="togglebox-header">web &amp; advertising</h3>
+        <div class="togglebox-content"> 
+            
+            <div class="row">
+        <div class="col-sm-6 clear-mrg">
+            <h2 class="title-thin text-muted">coding</h2>
+
+            <div class="progress-line crt-animate" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                 aria-valuemax="100">
+                <strong class="progress-title">HTML</strong>
+
+                
+                
+                <div class="progress-bar" data-text="70%" data-value="0.7"></div>
+            </div>
+
+            <div class="progress-line crt-animate" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                 aria-valuemax="100">
+                <strong class="progress-title">CSS</strong>
+
+                <div class="progress-bar" data-text="70%" data-value="0.7"></div>
+            </div>
+
+            <div class="progress-line crt-animate" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                 aria-valuemax="100">
+                <strong class="progress-title">Javascript</strong>
+
+                <div class="progress-bar" data-text="40%" data-value="0.4"></div>
+            </div>
+        </div>
+        <!-- .col-sm-6 -->
+
+        <div class="col-sm-6 clear-mrg">
+            <h2 class="title-thin text-muted">advertising</h2>
+
+            <ul class="styled-list clear-mrg">
+                <li>Google Ads</li>
+                <li>Google Merchant Center</li>
+                <li>Facebook Ads</li>
+                <li>LinkedIn Ads</li>
+            </ul>
+        </div>
+        <!-- .col-sm-6 -->
+    </div>
+        </div>
+    </li>
+    
+    <li>
+        <h3 class="togglebox-header">Marketing Automation &amp; Analytics</h3>
+        <div class="togglebox-content">
+            
+            <div class="row">
+        <div class="col-sm-6 clear-mrg">
+            <h2 class="title-thin text-muted">Analytics</h2>
+
+            <div class="row">
+                <div class="col-xs-4 text-center">
+                    <div class="progress-chart crt-animate" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                         aria-valuemax="100">
+                        <div class="progress-bar" data-text="70%" data-value="0.7"></div>
+                        <strong class="progress-title">Google Analytics</strong>
+                    </div>
+                </div>
+                <!-- .col-xs-4 -->
+
+                <div class="col-xs-4 text-center">
+                    <div class="progress-chart crt-animate" role="progressbar" aria-valuenow="88" aria-valuemin="0"
+                         aria-valuemax="100">
+                        <div class="progress-bar" data-text="70%" data-value="0.70"></div>
+                        <strong class="progress-title">Tag Manager</strong>
+                    </div>
+                </div>
+                <!-- .col-xs-4 -->
+                <!-- .col-xs-4 -->
+
+                <div class="col-xs-4 text-center">
+                    <div class="progress-chart crt-animate" role="progressbar" aria-valuenow="88" aria-valuemin="0"
+                         aria-valuemax="100">
+                        <div class="progress-bar" data-text="86%" data-value="0.86"></div>
+                        <strong class="progress-title">Excel Power User</strong>
+                    </div>
+                </div>
+                <!-- .col-xs-4 -->
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .col-sm-6 -->
+
+        <div class="col-sm-6 clear-mrg">
+            <h2 class="title-thin text-muted">CRM &amp; Marketing Automation</h2>
+            
+            <div class="progress-line crt-animate" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                 aria-valuemax="100">
+                <strong class="progress-title">Pardot</strong>
+
+                <div class="progress-bar" data-text="70%" data-value="0.7"></div>
+            </div>
+            <div class="progress-line crt-animate" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                 aria-valuemax="100">
+                <strong class="progress-title">Zapier / Code Webhooks</strong>
+                <div class="progress-bar" data-text="80%" data-value="0.8"></div>
+            </div>
+            <div class="progress-line crt-animate" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                 aria-valuemax="100">
+                <strong class="progress-title">Salesforce (Admin)</strong>
+
+                <div class="progress-bar" data-text="75%" data-value="0.75"></div>
+            </div>
+
+            <div class="progress-line crt-animate" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                 aria-valuemax="100">
+                <strong class="progress-title">Act-On</strong>
+
+                <div class="progress-bar" data-text="65%" data-value="0.65"></div>
+            </div>
+        </div>
+        <!-- .col-sm-6 -->
+    </div>
+        </div>
+    </li>
+    <li>
         <h3 class="togglebox-header">design</h3>
         <div class="togglebox-content">
         
@@ -636,132 +632,7 @@ $('#example4').typeIt({
     </div>
         </div>
     </li>
-</ul>
-    <ul class="togglebox">
-    <li>
-        <h3 class="togglebox-header">web &amp; google</h3>
-        <div class="togglebox-content"> 
-            
-            <div class="row">
-        <div class="col-sm-6 clear-mrg">
-            <h2 class="title-thin text-muted">coding</h2>
 
-            <div class="progress-line crt-animate" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                 aria-valuemax="100">
-                <strong class="progress-title">HTML</strong>
-
-                
-                
-                <div class="progress-bar" data-text="70%" data-value="0.7"></div>
-            </div>
-
-            <div class="progress-line crt-animate" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                 aria-valuemax="100">
-                <strong class="progress-title">CSS</strong>
-
-                <div class="progress-bar" data-text="70%" data-value="0.7"></div>
-            </div>
-
-            <div class="progress-line crt-animate" role="progressbar" aria-valuenow="40" aria-valuemin="0"
-                 aria-valuemax="100">
-                <strong class="progress-title">Javascript</strong>
-
-                <div class="progress-bar" data-text="40%" data-value="0.4"></div>
-            </div>
-        </div>
-        <!-- .col-sm-6 -->
-
-        <div class="col-sm-6 clear-mrg">
-            <h2 class="title-thin text-muted">Google</h2>
-
-            <ul class="styled-list clear-mrg">
-                <li>Analytics</li>
-                <li>Tag Manager</li>
-                <li>AdWords</li>
-                <li>Optimize</li>
-                <li>Merchant Center</li>
-            </ul>
-        </div>
-        <!-- .col-sm-6 -->
-    </div>
-        </div>
-    </li>
-
-    <li>
-        <h3 class="togglebox-header">miscellaneous</h3>
-        <div class="togglebox-content">
-            
-            <div class="row">
-        <div class="col-sm-6 clear-mrg">
-            <h2 class="title-thin text-muted">admin</h2>
-
-            <div class="row">
-                <div class="col-xs-4 text-center">
-                    <div class="progress-chart crt-animate" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                         aria-valuemax="100">
-                        <div class="progress-bar" data-text="90%" data-value="0.9"></div>
-                        <strong class="progress-title">Microsoft Excel</strong>
-                    </div>
-                </div>
-                <!-- .col-xs-4 -->
-
-                <div class="col-xs-4 text-center">
-                    <div class="progress-chart crt-animate" role="progressbar" aria-valuenow="88" aria-valuemin="0"
-                         aria-valuemax="100">
-                        <div class="progress-bar" data-text="90%" data-value="0.9"></div>
-                        <strong class="progress-title">Microsoft Office Package</strong>
-                    </div>
-                </div>
-                <!-- .col-xs-4 -->
-
-                <!--<div class="col-xs-4 text-center">
-                    <div class="progress-chart crt-animate" role="progressbar" aria-valuenow="66" aria-valuemin="0"
-                         aria-valuemax="100">
-                        <div class="progress-bar" data-text="66%" data-value="0.66"></div>
-                        <strong class="progress-title">XXX</strong>
-                    </div>
-                </div>
-                <!-- .col-xs-4 -->
-            </div>
-            <!-- .row -->
-        </div>
-        <!-- .col-sm-6 -->
-
-        <div class="col-sm-6 clear-mrg">
-            <h2 class="title-thin text-muted">CRM &amp; Automation</h2>
-
-            <div class="progress-line crt-animate" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                 aria-valuemax="100">
-                <strong class="progress-title">Act-On</strong>
-
-                <div class="progress-bar" data-text="65%" data-value="0.65"></div>
-            </div>
-
-            <div class="progress-line crt-animate" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                 aria-valuemax="100">
-                <strong class="progress-title">Zapier</strong>
-
-                <div class="progress-bar" data-text="80%" data-value="0.8"></div>
-            </div>
-
-            <div class="progress-line crt-animate" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                 aria-valuemax="100">
-                <strong class="progress-title">Salesforce (dev)</strong>
-
-                <div class="progress-bar" data-text="75%" data-value="0.75"></div>
-            </div>
-
-            <div class="progress-line crt-animate" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                 aria-valuemax="100">
-                <strong class="progress-title">Mouseflow</strong>
-
-                <div class="progress-bar" data-text="70%" data-value="0.7"></div>
-            </div>
-        </div>
-        <!-- .col-sm-6 -->
-    </div>
-        </div>
-    </li>
 </ul>
         </div>
     </div>
@@ -813,7 +684,7 @@ $('#example4').typeIt({
                         
                         <div class="education-box">
                             <time class="education-date" datetime="2017-11T2018-02">
-                                <span>November <strong class="text-upper">2017</strong> - Present <strong></strong></span>
+                                <span>Nov <strong class="text-upper">2017</strong> - <strong>Present</strong></span>
                             </time>
                             <h3>Digital Marketing Executive</h3>
 
@@ -822,13 +693,15 @@ $('#example4').typeIt({
                             </div>
                             <span class="education-company">Blacktrace Holdings</span>
 
-                            <p>In this centralized digital marketing role my scope encompassed areas of business analytics, CRM management, marketing automation, website ownership and running PPC accounts for all 5 Blacktrace brands.
+                            <p>In this centralized digital marketing role my scope encompassed areas of business analytics, CRM management, marketing automation, website ownership and running PPC/Ad accounts for all 5 Blacktrace brands.
                             </p>
+                            <p>I revamped Salesforce CRM solution and later executed the implementation of Pardot on top of that. This set the foundations to visualise and track the complete sales and marketing funnel.</p>
+                            <p>From here I was able to develop targeted digital campaigns, testing and optimising the right mix of channels that worked for our audience and automating where possible.</p>
                         </div>
 
                         <div class="education-box">
                             <time class="education-date" datetime="2017-07T2017-10">
-                                <span>Jul <strong class="text-upper">2017</strong> -  <strong>October 2017</strong></span>
+                                <span>Jul <strong class="text-upper">2017</strong> -  Oct <strong>2017</strong></span>
                             </time>
                             <h3>Marketing Coordinator</h3>
 
@@ -864,7 +737,7 @@ $('#example4').typeIt({
                             <h3>Account Manager</h3>
 
                             <div class="education-logo">
-                                <img src="assets/images/uploads/experience/gsklogo.svg" alt="GSKlogo" width="500">
+                                <img src="assets/images/uploads/experience/gsklogo.svg" alt="GSKlogo" width="80">
                             </div>
                             <span class="education-company">GlaxoSmithKline</span>
 
@@ -887,26 +760,7 @@ a bronze recognition award for my work.</p>
             <!-- .crt-paper -->
         </div>
     <!--work experience end-->
-    <!--mautic contact form code-->
-    <script type="text/javascript">
-    /** This section is only needed once per page if manually copying **/
-    if (typeof MauticSDKLoaded == 'undefined') {
-        var MauticSDKLoaded = true;
-        var head            = document.getElementsByTagName('head')[0];
-        var script          = document.createElement('script');
-        script.type         = 'text/javascript';
-        script.src          = 'https://benhadman.mautic.net/mautic/media/js/mautic-form.js';
-        script.onload       = function() {
-            MauticSDK.onLoad();
-        };
-        head.appendChild(script);
-        var MauticDomain = 'https://benhadman.mautic.net';
-        var MauticLang   = {
-            'submittingMessage': "Please wait..."
-        }
-    }
-</script>
-    <!--mautic contact form code-->
+
     <!--addcontactform-->
     <div class="crt-paper-layers" id="contact">
             <div class="crt-paper clearfix">
@@ -948,68 +802,14 @@ a bronze recognition award for my work.</p>
     .mauticform-button-wrapper .mauticform-button.btn-default[disabled], .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default[disabled] { background-color: #ffffff; border-color: #dddddd; opacity: 0.75; cursor: not-allowed; }
     .mauticform-pagebreak-wrapper .mauticform-button-wrapper {  display: inline; }
 </style>
-<div id="mauticform_wrapper_githubioform" class="mauticform_wrapper">
-    <form autocomplete="false" role="form" method="post" action="https://benhadman.mautic.net/form/submit?formId=1" id="mauticform_githubioform"  data-mautic-form="githubioform" enctype="multipart/form-data">
-        <div class="mauticform-error" id="mauticform_githubioform_error"></div>
-        <div class="mauticform-message" id="mauticform_githubioform_message"></div>
-        <div class="mauticform-innerform">
-
-            
-          <div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
-
-            <div id="mauticform_githubioform_first_name"  data-validate="first_name" data-validation-type="text" class="mauticform-row mauticform-text mauticform-field-1 mauticform-required">
-                <label id="mauticform_label_githubioform_first_name" for="mauticform_input_githubioform_first_name" class="mauticform-label">First Name</label>
-                <input id="mauticform_input_githubioform_first_name" name="mauticform[first_name]" value="" class="mauticform-input" type="text" />
-                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
-            </div>
-
-            <div id="mauticform_githubioform_last_name"  data-validate="last_name" data-validation-type="text" class="mauticform-row mauticform-text mauticform-field-2 mauticform-required">
-                <label id="mauticform_label_githubioform_last_name" for="mauticform_input_githubioform_last_name" class="mauticform-label">Last Name</label>
-                <input id="mauticform_input_githubioform_last_name" name="mauticform[last_name]" value="" class="mauticform-input" type="text" />
-                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
-            </div>
-
-            <div id="mauticform_githubioform_email"  data-validate="email" data-validation-type="email" class="mauticform-row mauticform-email mauticform-field-3 mauticform-required">
-                <label id="mauticform_label_githubioform_email" for="mauticform_input_githubioform_email" class="mauticform-label">Email</label>
-                <input id="mauticform_input_githubioform_email" name="mauticform[email]" value="" class="mauticform-input" type="email" />
-                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
-            </div>
-
-            <div id="mauticform_githubioform_recruiter"  class="mauticform-row mauticform-checkboxgrp mauticform-field-4">
-                <label  class="mauticform-label" for="mauticform_checkboxgrp_checkbox_recruiter_Yes1">Recruiter</label>
-                <span class="mauticform-helpmessage">Are you a recruiter?</span>
-                <div class="mauticform-checkboxgrp-row">
-                    <label id="mauticform_checkboxgrp_label_recruiter_Yes0" for="mauticform_checkboxgrp_checkbox_recruiter_Yes0"  class="mauticform-checkboxgrp-label">
-                        <input  class="mauticform-checkboxgrp-checkbox" name="mauticform[recruiter][]" id="mauticform_checkboxgrp_checkbox_recruiter_Yes0" type="checkbox" value="Yes" />
-                        Yes
-                    </label>
-                </div>
-                <div class="mauticform-checkboxgrp-row">
-                    <label id="mauticform_checkboxgrp_label_recruiter_No1" for="mauticform_checkboxgrp_checkbox_recruiter_No1"  class="mauticform-checkboxgrp-label">
-                        <input  class="mauticform-checkboxgrp-checkbox" name="mauticform[recruiter][]" id="mauticform_checkboxgrp_checkbox_recruiter_No1" type="checkbox" value="No" />
-                        No
-                    </label>
-                </div>
-                <span class="mauticform-errormsg" style="display: none;"></span>
-            </div>
-
-            <div id="mauticform_githubioform_comments__questions"  data-validate="comments__questions" data-validation-type="text" class="mauticform-row mauticform-text mauticform-field-5 mauticform-required">
-                <label id="mauticform_label_githubioform_comments__questions" for="mauticform_input_githubioform_comments__questions" class="mauticform-label">Comments / Questions</label>
-                <input id="mauticform_input_githubioform_comments__questions" name="mauticform[comments__questions]" value="" class="mauticform-input" type="text" />
-                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
-            </div>
-
-            <div id="mauticform_githubioform_submit"  class="mauticform-row mauticform-button-wrapper mauticform-field-6">
-                <button type="submit" name="mauticform[submit]" id="mauticform_input_githubioform_submit" name="mauticform[submit]" value="" class="mauticform-button btn btn-default" value="1">Submit</button>
-            </div>
-            </div>
-        </div>
-
-        <input type="hidden" name="mauticform[formId]" id="mauticform_githubioform_id" value="1"/>
-        <input type="hidden" name="mauticform[return]" id="mauticform_githubioform_return" value=""/>
-        <input type="hidden" name="mauticform[formName]" id="mauticform_githubioform_name" value="githubioform"/>
-
-        </form>
+ <form method="POST" action="https://formspree.io/benhadman@gmail.com" rel="noreferrer" style="max-width: 600px; margin: 10px auto; padding:2%">
+     <input class="mauticform-input" style="margin:2%" type="text" name="fName" placeholder="First Name">
+     <input class="mauticform-input" style="margin:2%" type="text" name="lName" placeholder="Surname">
+    <input class="mauticform-input" style="margin:2%" type="email" name="email" placeholder="Your email">
+     <textarea name="message" style="margin:2%;min-height:100px" placeholder="Comments"></textarea>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+                        
 </div>
   
  <!--contact form mautic end-->
@@ -1039,14 +839,7 @@ a bronze recognition award for my work.</p>
             <ul class="clear-list">
                 <li><a href="index.html">home</a></li>
                 <li><a href="#experience">experience</a>
-               <!-- <li class="has-sub-menu"><a href="#">pages</a>
-                    <ul class="sub-menu">
-                        <li><a href="typography.html">typography</a></li>
-                        <li><a href="components.html">components</a></li>
-                        <li><a href="search.html">search</a></li>
-                        <li><a href="404.html">404</a></li>
-                    </ul>
-                </li>
+               <!-- 
                 <li class="has-sub-menu"><a href="category.html">blog</a>
                     <ul class="sub-menu">
                         <li><a href="single.html">single</a></li>
@@ -1211,7 +1004,7 @@ a bronze recognition award for my work.</p>
 <footer id="crt-footer" class="crt-container-lg">
     <div class="crt-container">
         <div class="crt-container-sm clear-mrg text-center">
-            <p>Ben Hadman CV @ All Rights Reserved 2018</p>
+            <p>Ben Hadman CV @ All Rights Reserved 2019</p>
         </div>
     </div>
     <!-- .crt-container -->
@@ -1231,20 +1024,10 @@ a bronze recognition award for my work.</p>
 <!-- Scripts -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
 <script type="text/javascript" src="assets/js/plugins.min.js"></script>
 <script type="text/javascript" src="assets/js/theme.min.js"></script>
-    <!--mautic install-->
-    <script>
-    (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
-        w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
-        m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://benhadman.mautic.net/mtc.js','mt');
-
-    mt('send', 'pageview');
-</script>
-    <!--Mautic install code end-->
+    
     
     <!--animated headlines--><!--
     <script src="assets/js/jquery-2.1.1.js"></script>
