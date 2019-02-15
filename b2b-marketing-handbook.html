@@ -12,8 +12,30 @@
   gtag('config', 'UA-108813812-1');
 </script>
     
-    <script> (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n; w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t), m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m) })(window,document,'script','http://35.246.74.0/mtc.js','mt'); mt('send', 'pageview'); </script>
-     
+     <!--mautic-->
+    <script>
+	function getUrlParameter(name) {
+		name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+		var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+		var results = regex.exec(location.search);
+		return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+	};
+	
+    (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+        w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+        m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','http://35.246.74.0/mtc.js','mt');
+
+	var email  = getUrlParameter('e');
+
+	if(email !== ''){
+		mt('send', 'pageview', {email: email});
+	} else {
+		mt('send', 'pageview');
+	}
+</script>
+    <!--mautic end-->
+    
 <script async src="assets/js/page-progress.js"></script>
     <style>.progress {
   background: linear-gradient(to right, #F9EC31 var(--scroll), transparent 0);

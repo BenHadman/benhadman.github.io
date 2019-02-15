@@ -52,7 +52,27 @@
 </script>
     <!--drift-->
     <!--mautic-->
-    <script> (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n; w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t), m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m) })(window,document,'script','http://35.246.74.0/mtc.js','mt'); mt('send', 'pageview'); </script>
+    <script>
+	function getUrlParameter(name) {
+		name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+		var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+		var results = regex.exec(location.search);
+		return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+	};
+	
+    (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+        w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+        m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','http://35.246.74.0/mtc.js','mt');
+
+	var email  = getUrlParameter('e');
+
+	if(email !== ''){
+		mt('send', 'pageview', {email: email});
+	} else {
+		mt('send', 'pageview');
+	}
+</script>
     <!--mautic end-->
     <!-- Start of Async Drift Code -->
 <script>
@@ -296,7 +316,7 @@ $('.demo-prompt').click(function(){
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typeit/4.4.0/typeit.min.js"></script>
             <span class="type-it"></span>
             <p id="example4"></p> 
-            <script>
+ <script>
 $('#example4').typeIt({
      speed: 42,
      autoStart: false,
@@ -318,7 +338,7 @@ $('#example4').typeIt({
 .tiPause(750)
 .tiSettings({speed: 42})
 </script>
-           
+         
                 
             </div>
         </div>
