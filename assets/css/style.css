@@ -6874,7 +6874,6 @@ blockquote.quote-side:before,
         
 .toc {
     z-index: 999999999;
-    border-top: 1px solid #e1e6eb;
     background-color: #fff;
     color: #4d4d4d;
     position: fixed;
@@ -6914,6 +6913,13 @@ blockquote.quote-side:before,
     padding: 10px;
     transition: background-color 0.15s linear 0s;
     
+}
+
+.toc-disabled {
+  opacity: 0.65; 
+  cursor: not-allowed;
+  background-color:#ccc;
+  text-decoration: line-through;
 }
 
 .breadcrumb-link, .toc-menu-link {
