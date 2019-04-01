@@ -1426,6 +1426,11 @@ textarea.form-item {
     }
 }
 
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
 .clearfix:before,
 .clearfix:after {
     content: " ";
