@@ -591,5 +591,40 @@
 
 <script type="text/javascript" src="assets/js/plugins.min.js"></script>
 <script type="text/javascript" src="assets/js/theme.min.js"></script>
+      <script>var scrollTwentyFive = false;
+var scrollFifty = false;
+var scrollSeventyFive = false;
+var scrollOneHundred = false;
+var scrollHeight = $(document).height() - $(window).height();
+
+// Create the scrollPercentage
+
+$(window).bind('scroll', function() {
+
+    window.scrollPercent = (scrollHeight == 0) ? 0 : ($(window).scrollTop() / scrollHeight) * 100;
+
+    // Conditional code we'll use to fire events based on scrollPercentage.
+
+    if (window.scrollPercent >= 25 && !scrollTwentyFive) {
+        heap.track('scroll depth', {percent: 25});
+        scrollTwentyFive = true;
+    }
+
+    if (window.scrollPercent >= 50 && !scrollFifty) {
+        heap.track('scroll depth', {percent: 50});
+        scrollFifty = true;
+    }
+
+    if (window.scrollPercent >= 75 && !scrollSeventyFive) {
+        heap.track('scroll depth', {percent: 75});
+        scrollSeventyFive = true;
+    }
+
+    if (window.scrollPercent >= 100 && !scrollOneHundred) {
+        heap.track('scroll depth', {percent: 100});
+        scrollOneHundred = true;
+    }
+
+});</script>
 </body>
 </html>
