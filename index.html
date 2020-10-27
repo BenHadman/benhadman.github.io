@@ -25,9 +25,6 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_x0VonPHiMCWorFYdAxxGA4b6vUI3_hU&callback=initMap"
-    async defer></script>
     <!-- Icon Fonts -->
     <link href="assets/fonts/icomoon/style.css" rel="stylesheet">
 
@@ -51,29 +48,7 @@
   }}();
 </script>
     <!--drift-->
-    <!--mautic-->
-    <script>
-	function getUrlParameter(name) {
-		name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-		var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-		var results = regex.exec(location.search);
-		return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-	};
-	
-    (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
-        w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
-        m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://polymer.marketing/mtc.js','mt');
 
-	var email  = getUrlParameter('e');
-
-	if(email !== ''){
-		mt('send', 'pageview', {email: email});
-	} else {
-		mt('send', 'pageview');
-	}
-</script>
-    <!--mautic end-->
     <!-- Start of Async Drift Code -->
 <script>
 !function() {
@@ -1071,38 +1046,6 @@ a bronze recognition award for my work.</p>
 <script src="assets/js/main.js"></script> <!-- Resource jQuery -->
     
 </body>
-<!--personyze-->
-<script>
-    window._S_T ||
-    (function(d, css){
-        var c = d.createElement('style'),
-            s = d.createElement('script'),
-            u = s.onload===undefined && s.onreadystatechange===undefined,
-            r = function() {c.parentNode && h.removeChild(c)},
-            i = 0,
-            l = function(t) {t.async=t.blocking=true; t.reg_ondropcss(r); t.setup(5366, "benhadman.github.io")},
-            f = function() {window._S_T ? l(_S_T) : i++<120 && setTimeout(f, 600)},
-            H = d.getElementsByTagName('head'),
-            h = H && H[0] || d.documentElement;
-        s.async = true;
-        s.src = '\/\/counter.personyze.com\/stat-track-lib.js';
-        s.onload = s.onreadystatechange = f;
-        h.appendChild(c);
-        h.appendChild(s);
-        if (c.styleSheet) c.styleSheet.cssText = css;
-        else c.appendChild(d.createTextNode(css));
-        if (u) f();
-        setTimeout(r, 2000);
-    })(document, 'body {visibility:hidden}');
-    </script>
-<!--personyze end-->
-    <!--record-->
-    <script type="text/javascript">
-    window.smartlook||(function(d) {
-    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
-    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
-    c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
-    })(document);
-    smartlook('init', 'b7617bf7e449fee37afcf37bdb4cdc5cbe210976');
-</script>
+
+
 </html>
