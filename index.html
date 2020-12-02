@@ -99,7 +99,7 @@ drift.load('hc97a9hn2uny');
 
                             <ul class="clear-list">
                                 <li><a href="/">home</a></li>
-                                <li><a href="#experience">experience</a>
+                                <li><a href="/index#experience">experience</a>
                                     <li><a href="portfolio.html">portfolio</a></li>
                                 <!--<li class="has-sub-menu"><a href="#">pages</a>
                                     <ul class="sub-menu">
@@ -290,7 +290,8 @@ $('.demo-prompt').click(function(){
             <div class="text-box">
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typeit/4.4.0/typeit.min.js"></script>
             <span class="type-it"></span>
-            <p id="example4"></p> 
+            <p id="example4"></p>
+            <script>const queryString=window.location.search,urlParams=new URLSearchParams(queryString),company=urlParams.get("company");function isComParam(){return""===company?"Hi, ":"undefined"===company?"Hi, ":null==company?"Hi, ":"Hi "+company+", "}console.log(company);const message=isComParam();</script> 
  <script>
 $('#example4').typeIt({
      speed: 42,
@@ -300,15 +301,14 @@ $('#example4').typeIt({
 .tiType('HI')
 .tiPause(500)
 .tiDelete(2)
-.tiType('Hi, ')
+.tiType(message)
 .tiPause(1000)
 .tiType('I\'m Ben,')
 .tiBreak() .tiPause(500)
-.tiType('I made this online CV to demonstrate some web design skills...  ')
+.tiType('I made this online CV to demonstrate some web dev skills...  ')
 .tiBreak() .tiPause(500)
-.tiType('I have full marketing mix experience and am looking to progress my career forwards in a high growth environment.')
+.tiType('I am a technical marketer looking for opportunities in growth and customer acquisition in the life science sector')
 .tiBreak() .tiPause(500)
-              
 .tiType('Check out this website for more info or get in touch with any opportunities...')
 .tiPause(750)
 .tiSettings({speed: 42})
@@ -360,10 +360,10 @@ $('#example4').typeIt({
                 <dd>Benjamin Hadman</dd>
 
                 <dt class="text-upper">address</dt>
-                <dd>West Hampstead, London</dd>
+                <dd>Hitchin, Herts / London</dd>
 
                 <dt class="text-upper">e-mail</dt>
-                <dd>benhadman"at"gmail.com</dd>
+                <dd>contact"at"benhadman"dot"me</dd>
 
                 <dt class="text-upper">phone</dt>
                 <dd>+44 7825 739 529</dd>
@@ -402,13 +402,13 @@ $('#example4').typeIt({
                         <p class="text-upper">A Levels</p>
                         <dl class="dl-horizontal clear-mrg">
                 <dt class="text-upper">Biology</dt>
-                <dd>B</dd>
+                
                 <dt class="text-upper">Chemistry</dt>
-                <dd>B</dd>
+               
                         <dt class="text-upper">Geography</dt>
-                <dd>C</dd>
+                
                              <dt class="text-upper">Music</dt>
-                <dd>B</dd>
+                
             </dl>
                         
                         
@@ -448,21 +448,21 @@ $('#example4').typeIt({
 
                 
                 
-                <div class="progress-bar" data-text="70%" data-value="0.7"></div>
+                <div class="progress-bar" data-text="" data-value="0.7"></div>
             </div>
 
             <div class="progress-line crt-animate" role="progressbar" aria-valuenow="80" aria-valuemin="0"
                  aria-valuemax="100">
                 <strong class="progress-title">CSS</strong>
 
-                <div class="progress-bar" data-text="70%" data-value="0.7"></div>
+                <div class="progress-bar" data-text="" data-value="0.7"></div>
             </div>
 
             <div class="progress-line crt-animate" role="progressbar" aria-valuenow="40" aria-valuemin="0"
                  aria-valuemax="100">
                 <strong class="progress-title">Javascript</strong>
 
-                <div class="progress-bar" data-text="40%" data-value="0.4"></div>
+                <div class="progress-bar" data-text="" data-value="0.4"></div>
             </div>
         </div>
         <!-- .col-sm-6 -->
@@ -494,7 +494,7 @@ $('#example4').typeIt({
                 <div class="col-xs-4 text-center">
                     <div class="progress-chart crt-animate" role="progressbar" aria-valuenow="70" aria-valuemin="0"
                          aria-valuemax="100">
-                        <div class="progress-bar" data-text="70%" data-value="0.7"></div>
+                        <div class="progress-bar" data-text="" data-value="0.7"></div>
                         <strong class="progress-title">Google Analytics</strong>
                     </div>
                 </div>
@@ -503,7 +503,7 @@ $('#example4').typeIt({
                 <div class="col-xs-4 text-center">
                     <div class="progress-chart crt-animate" role="progressbar" aria-valuenow="88" aria-valuemin="0"
                          aria-valuemax="100">
-                        <div class="progress-bar" data-text="70%" data-value="0.70"></div>
+                        <div class="progress-bar" data-text="" data-value="0.70"></div>
                         <strong class="progress-title">Tag Manager</strong>
                     </div>
                 </div>
@@ -513,7 +513,7 @@ $('#example4').typeIt({
                 <div class="col-xs-4 text-center">
                     <div class="progress-chart crt-animate" role="progressbar" aria-valuenow="88" aria-valuemin="0"
                          aria-valuemax="100">
-                        <div class="progress-bar" data-text="86%" data-value="0.86"></div>
+                        <div class="progress-bar" data-text="" data-value="0.86"></div>
                         <strong class="progress-title">Excel Power User</strong>
                     </div>
                 </div>
@@ -530,25 +530,18 @@ $('#example4').typeIt({
                  aria-valuemax="100">
                 <strong class="progress-title">Pardot</strong>
 
-                <div class="progress-bar" data-text="70%" data-value="0.7"></div>
+                <div class="progress-bar" data-text="" data-value="0.7"></div>
             </div>
             <div class="progress-line crt-animate" role="progressbar" aria-valuenow="80" aria-valuemin="0"
                  aria-valuemax="100">
-                <strong class="progress-title">Zapier / Code Webhooks</strong>
-                <div class="progress-bar" data-text="80%" data-value="0.8"></div>
+                <strong class="progress-title">APIs - Zapier / Code Webhooks / Integromat</strong>
+                <div class="progress-bar" data-text="" data-value="0.8"></div>
             </div>
             <div class="progress-line crt-animate" role="progressbar" aria-valuenow="50" aria-valuemin="0"
                  aria-valuemax="100">
-                <strong class="progress-title">Salesforce (Admin)</strong>
+                <strong class="progress-title">Salesforce (Admin/Dev)</strong>
 
-                <div class="progress-bar" data-text="75%" data-value="0.75"></div>
-            </div>
-
-            <div class="progress-line crt-animate" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                 aria-valuemax="100">
-                <strong class="progress-title">Act-On</strong>
-
-                <div class="progress-bar" data-text="65%" data-value="0.65"></div>
+                <div class="progress-bar" data-text="" data-value="0.75"></div>
             </div>
         </div>
         <!-- .col-sm-6 -->
@@ -602,28 +595,28 @@ $('#example4').typeIt({
                  aria-valuemax="100">
                 <strong class="progress-title">Adobe After Effects</strong>
 
-                <div class="progress-bar" data-text="65%" data-value="0.65"></div>
+                <div class="progress-bar" data-text="" data-value="0.65"></div>
             </div>
 
             <div class="progress-line crt-animate" role="progressbar" aria-valuenow="60" aria-valuemin="0"
                  aria-valuemax="100">
                 <strong class="progress-title">Premiere Pro</strong>
 
-                <div class="progress-bar" data-text="60%" data-value="0.6"></div>
+                <div class="progress-bar" data-text="" data-value="0.6"></div>
             </div>
 
             <div class="progress-line crt-animate" role="progressbar" aria-valuenow="70" aria-valuemin="0"
                  aria-valuemax="100">
                 <strong class="progress-title">Google Web Designer</strong>
 
-                <div class="progress-bar" data-text="70%" data-value="0.7"></div>
+                <div class="progress-bar" data-text="" data-value="0.7"></div>
             </div>
 
             <div class="progress-line crt-animate" role="progressbar" aria-valuenow="70" aria-valuemin="0"
                  aria-valuemax="100">
                 <strong class="progress-title">Keyshot</strong>
 
-                <div class="progress-bar" data-text="70%" data-value="0.7"></div>
+                <div class="progress-bar" data-text="" data-value="0.7"></div>
             </div>
         </div>
         <!-- .col-sm-6 -->
@@ -691,7 +684,7 @@ $('#example4').typeIt({
                             </div>
                             <span class="education-company">iotaSciences</span>
 
-                            <p>First commercial recruit to the company, responsible for launch and demand generation for a biotech laboratory instrument. Built out the CRM and Marketing tech stack. Organised conference exhibitor attendance.</p>
+                            <p>First commercial recruit to the company, responsible for launch and demand generation for a biotech laboratory instrument. Built out the CRM and Marketing tech stack. Crafted and scaled lead generation campaigns. Organised conference exhibitor attendance.</p>
                         </div>
 
                         <div class="education-box">
